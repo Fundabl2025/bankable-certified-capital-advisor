@@ -71,12 +71,13 @@ nav.topnav .nav-links a {
   transition: color 0.2s;
 }
 nav.topnav .nav-links a:hover { color: var(--blue); }
-nav.topnav .nav-cta {
-  background: var(--gradient); color: white;
-  padding: 10px 20px; border-radius: 8px; font-weight: 600; font-size: 14px;
+nav.topnav .nav-links a.nav-cta {
+  background: var(--gradient); color: #ffffff !important;
+  padding: 10px 20px; border-radius: 8px; font-weight: 700; font-size: 14px;
   text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
-nav.topnav .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 10px 30px rgba(19,125,197,0.25); }
+nav.topnav .nav-links a.nav-cta:hover { transform: translateY(-1px); box-shadow: 0 10px 30px rgba(19,125,197,0.35); color: #ffffff !important; }
 @media (max-width: 880px) { nav.topnav .nav-links { display: none; } }
 
 /* ===== MASTER HERO HEADER (universal, never changes) ===== */
@@ -94,7 +95,7 @@ nav.topnav .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 10px 30px
   display: inline-block;
   font-size: 12px; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.18em;
-  color: var(--cyan);
+  color: #7dd3fc;
   margin-bottom: 18px;
 }
 .hero-master .hm-title {
@@ -165,7 +166,7 @@ nav.topnav .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 10px 30px
   display: inline-flex; align-items: center; gap: 8px;
   background: rgba(0,174,239,0.12); border: 1px solid rgba(0,174,239,0.3);
   padding: 8px 16px; border-radius: 999px;
-  font-size: 13px; font-weight: 600; color: var(--cyan);
+  font-size: 13px; font-weight: 700; color: #7dd3fc;
   text-transform: uppercase; letter-spacing: 0.08em;
   margin-bottom: 24px;
 }
@@ -254,7 +255,7 @@ section.block { padding: 100px 28px; }
 .container { max-width: 1240px; margin: 0 auto; }
 .eyebrow {
   display: inline-block;
-  font-size: 13px; font-weight: 700; color: var(--blue);
+  font-size: 13px; font-weight: 800; color: var(--navy);
   text-transform: uppercase; letter-spacing: 0.15em;
   margin-bottom: 18px;
 }
@@ -1174,7 +1175,7 @@ footer .fbot .legal { color: rgba(255,255,255,0.4); }
   background: rgba(0,174,239,0.15);
   border: 1px solid rgba(0,174,239,0.35);
   padding: 8px 16px; border-radius: 999px;
-  font-size: 12px; font-weight: 700; color: var(--cyan);
+  font-size: 12px; font-weight: 700; color: #7dd3fc;
   text-transform: uppercase; letter-spacing: 0.12em;
   margin-bottom: 22px;
 }
@@ -1294,7 +1295,7 @@ footer .fbot .legal { color: rgba(255,255,255,0.4); }
   display: inline-flex; align-items: center; gap: 8px;
   background: rgba(0,174,239,0.15); border: 1px solid rgba(0,174,239,0.35);
   padding: 8px 16px; border-radius: 999px;
-  font-size: 12px; font-weight: 700; color: var(--cyan);
+  font-size: 12px; font-weight: 700; color: #7dd3fc;
   text-transform: uppercase; letter-spacing: 0.12em;
   margin-bottom: 22px;
 }
@@ -1650,10 +1651,10 @@ footer .fbot .legal { color: rgba(255,255,255,0.4); }
 }
 .cl-tier-tag {
   display: inline-block;
-  font-size: 11px; font-weight: 700; padding: 5px 12px;
+  font-size: 11px; font-weight: 800; padding: 5px 12px;
   border-radius: 999px; text-transform: uppercase; letter-spacing: 0.12em;
-  background: rgba(19,125,197,0.1); color: var(--blue);
-  border: 1px solid rgba(19,125,197,0.2);
+  background: rgba(45,56,138,0.1); color: var(--navy);
+  border: 1px solid rgba(45,56,138,0.25);
   margin-bottom: 14px; align-self: flex-start;
 }
 .cl-tier-name {
@@ -1730,10 +1731,11 @@ footer .fbot .legal { color: rgba(255,255,255,0.4); }
 }
 .cl-cta.primary:hover { transform: translateY(-2px); }
 .cl-cta.secondary {
-  background: transparent; color: var(--blue);
-  border: 1.5px solid var(--blue);
+  background: transparent; color: var(--navy);
+  border: 1.5px solid var(--navy);
+  font-weight: 700;
 }
-.cl-cta.secondary:hover { background: var(--blue); color: white; }
+.cl-cta.secondary:hover { background: var(--navy); color: white; border-color: var(--navy); }
 .cl-cta.invitation {
   background: var(--cyan); color: var(--navy-deep);
 }
@@ -3817,6 +3819,4 @@ window.addEventListener('scroll', () => {
 window.addEventListener('beforeunload', (e) => {
   if (scrolledFar && !exitShown) showExitModal();
 });
-// Mark registered when masterclass form submitted
-document.getElementById('masterclassForm')?.addEventListener('submit', () => {
-  sessionStorage.setItem('mc_registered', 'true');
+// Mark registered when masterclass form su
