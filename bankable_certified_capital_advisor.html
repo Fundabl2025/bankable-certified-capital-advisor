@@ -1156,6 +1156,122 @@ footer .fbot .legal { color: rgba(255,255,255,0.4); }
   .quiz-result .score-circle { width: 130px; height: 130px; font-size: 44px; }
 }
 
+/* ===== 12-MIN BRIEF (HERO ADJACENT, UNGATED) ===== */
+.brief {
+  background: linear-gradient(180deg, #0a1845 0%, #142560 100%);
+  background-image: radial-gradient(ellipse at center top, rgba(0,174,239,0.15), transparent 55%);
+  padding: 80px 28px;
+  color: white;
+}
+.brief .brief-inner {
+  max-width: 1080px; margin: 0 auto;
+  text-align: center;
+}
+.brief .brief-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(0,174,239,0.15);
+  border: 1px solid rgba(0,174,239,0.35);
+  padding: 8px 16px; border-radius: 999px;
+  font-size: 12px; font-weight: 700; color: var(--cyan);
+  text-transform: uppercase; letter-spacing: 0.12em;
+  margin-bottom: 22px;
+}
+.brief h2 {
+  color: white;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  margin-bottom: 14px;
+  line-height: 1.15;
+}
+.brief h2 .accent {
+  background: linear-gradient(90deg, #00aeef, #7dd3fc);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.brief p.brief-sub {
+  font-size: 17px; color: rgba(255,255,255,0.82); line-height: 1.55;
+  max-width: 720px; margin: 0 auto 36px;
+}
+.brief-video {
+  position: relative;
+  max-width: 880px; margin: 0 auto 32px;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, #0a1845, #137dc5);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.08);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.brief-video:hover { transform: scale(1.01); }
+.brief-video::before {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(circle at center, rgba(0,174,239,0.2), transparent 60%);
+}
+.brief-video .brief-play {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 100px; height: 100px; border-radius: 50%;
+  background: var(--cyan); color: var(--navy-deep);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 40px; padding-left: 8px;
+  box-shadow: 0 0 80px rgba(0,174,239,0.5);
+  animation: pulse 2.4s infinite;
+}
+.brief-video .brief-duration {
+  position: absolute; top: 20px; right: 20px;
+  background: rgba(10,24,69,0.85);
+  padding: 8px 14px; border-radius: 8px;
+  font-size: 13px; color: white; font-weight: 800;
+  letter-spacing: 0.05em;
+}
+.brief-video .brief-title-overlay {
+  position: absolute; bottom: 24px; left: 24px; right: 24px;
+  color: white; text-align: left;
+  font-family: 'Sora'; font-weight: 700; font-size: 20px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+  z-index: 2;
+}
+.brief-ctas {
+  display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+}
+.brief-ctas .brief-cta-primary {
+  background: var(--cyan); color: var(--navy-deep);
+  padding: 16px 28px; border-radius: 10px;
+  font-weight: 800; font-size: 15px;
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 8px;
+  transition: transform 0.2s;
+}
+.brief-ctas .brief-cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(0,174,239,0.4);
+}
+.brief-ctas .brief-cta-secondary {
+  background: transparent; color: white;
+  padding: 16px 28px; border-radius: 10px;
+  font-weight: 700; font-size: 15px;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: all 0.2s;
+}
+.brief-ctas .brief-cta-secondary:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.6);
+}
+.brief-meta {
+  margin-top: 22px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+}
+@media (max-width: 640px) {
+  .brief { padding: 50px 18px; }
+  .brief h2 { font-size: 26px; }
+  .brief p.brief-sub { font-size: 15px; margin-bottom: 26px; }
+  .brief-video .brief-play { width: 70px; height: 70px; font-size: 28px; }
+  .brief-video .brief-title-overlay { font-size: 15px; bottom: 14px; left: 16px; right: 16px; }
+  .brief-ctas { flex-direction: column; gap: 10px; }
+  .brief-ctas a { width: 100%; box-sizing: border-box; justify-content: center; }
+}
+
 /* ===== MASTERCLASS LEAD MAGNET ===== */
 .masterclass {
   background: linear-gradient(135deg, #0a1845 0%, #1a2870 60%, #137dc5 130%);
@@ -2159,6 +2275,27 @@ footer .fbot .legal { color: rgba(255,255,255,0.4); }
   </div>
 </section>
 
+<!-- ============= 12-MINUTE BRIEF (HERO ADJACENT, UNGATED) ============= -->
+<section class="brief" id="brief">
+  <div class="brief-inner">
+    <span class="brief-eyebrow"><span class="pulse-dot"></span> Free 12-Minute Brief &middot; No Signup Required</span>
+    <h2>The Bankable<span class="tm">™</span> Brief: <span class="accent">12 minutes that change how you see capital.</span></h2>
+    <p class="brief-sub">Kevin Murphy gives you the core of the Bankable<span class="tm">™</span> framework in under 12 minutes. No fluff, no upsell wall. See the 7 Cs, hear the readiness gap that's costing business owners billions, and decide for yourself if you want to go deeper.</p>
+
+    <div class="brief-video" onclick="alert('Video player would open here. Drop in your Vimeo, Wistia, or YouTube embed when ready.')">
+      <div class="brief-duration">12 MIN</div>
+      <div class="brief-play">▶</div>
+      <div class="brief-title-overlay">Watch: The 7 Cs of Institutional Readiness &mdash; In 12 Minutes</div>
+    </div>
+
+    <div class="brief-ctas">
+      <a href="#apply" class="brief-cta-primary">Start The $7 Capital Connector Trial &rarr;</a>
+      <a href="#masterclass" class="brief-cta-secondary">Watch The Full 35-Min Masterclass</a>
+    </div>
+    <div class="brief-meta">No email required for the Brief. Email required for the full Masterclass.</div>
+  </div>
+</section>
+
 <!-- ============= PROBLEM ============= -->
 <section class="block problem">
   <div class="container">
@@ -2217,9 +2354,9 @@ footer .fbot .legal { color: rgba(255,255,255,0.4); }
 <section class="masterclass" id="masterclass">
   <div class="mc-inner">
     <div class="mc-content">
-      <span class="mc-eyebrow"><span class="pulse-dot"></span> Free Live Training &middot; New Session Daily</span>
-      <h2>The Bankable<span class="tm">™</span> Masterclass: <span class="accent">60 minutes that redefine how you think about capital.</span></h2>
-      <p class="mc-sub">Watch Kevin Murphy walk you through the 7 Cs of Institutional Readiness, the Lender Lens that decodes how banks actually evaluate businesses, and the exact path to becoming a Certified Capital Advisor &mdash; whether you're a business owner, a career-changer, or already in the industry.</p>
+      <span class="mc-eyebrow"><span class="pulse-dot"></span> Free 35-Minute Masterclass &middot; The Deeper Dive</span>
+      <h2>The Bankable<span class="tm">™</span> Masterclass: <span class="accent">35 minutes that redefine how you think about capital.</span></h2>
+      <p class="mc-sub">Already watched the 12-Minute Brief? Go deeper. Kevin Murphy walks you through the <strong>full 7 Cs framework</strong>, the <strong>Lender Lens</strong> that decodes how banks actually evaluate businesses, and the exact path to becoming a Certified Capital Advisor &mdash; whether you're a business owner, a career-changer, or already in the industry.</p>
 
       <ul class="mc-bullets">
         <li>The <strong>readiness gap</strong> most business owners don't know is killing their funding chances</li>
@@ -2233,7 +2370,7 @@ footer .fbot .legal { color: rgba(255,255,255,0.4); }
     <div>
       <div class="mc-preview-video">
         <div class="mc-play">▶</div>
-        <div class="mc-duration">60 MIN</div>
+        <div class="mc-duration">35 MIN</div>
       </div>
 
       <form class="masterclass-form" id="masterclassForm" onsubmit="return submitMasterclass(event)">
@@ -2269,8 +2406,8 @@ footer .fbot .legal { color: rgba(255,255,255,0.4); }
   <div class="exit-modal-card">
     <button class="exit-modal-close" onclick="closeExitModal()" aria-label="Close">×</button>
     <div class="exit-modal-eyebrow">Wait — One Quick Thing</div>
-    <h3>Before you go, watch the free 60-minute Bankable<span class="tm">™</span> Masterclass.</h3>
-    <p>Kevin Murphy walks you through the 7 Cs framework, the Lender Lens, and how to start earning as a Capital Connector for $7. No credit card. No commitment.</p>
+    <h3>Before you go, watch the free Bankable<span class="tm">™</span> Masterclass.</h3>
+    <p>Kevin Murphy walks you through the 7 Cs framework, the Lender Lens, and how to start earning as a Capital Connector for $7. 35 minutes. No credit card. No commitment.</p>
     <a href="#masterclass" class="exit-modal-btn" onclick="closeExitModal()">Watch The Free Masterclass &rarr;</a>
     <button class="exit-modal-skip" onclick="closeExitModal()">No thanks, I'll close the page</button>
   </div>
