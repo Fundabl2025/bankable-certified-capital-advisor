@@ -1308,29 +1308,31 @@ footer .fbot .legal { color: rgba(255,255,255,0.4); }
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 .masterclass .mc-sub {
-  font-size: 18px; color: rgba(255,255,255,0.8); line-height: 1.55;
+  font-size: 18px; color: rgba(255,255,255,0.95); line-height: 1.6;
   margin-bottom: 28px; max-width: 540px;
 }
 .masterclass .mc-bullets {
-  list-style: none; padding: 0;
-  display: flex; flex-direction: column; gap: 14px;
-  margin-bottom: 32px;
+  list-style: none; padding: 0; margin: 0 0 32px;
 }
 .masterclass .mc-bullets li {
-  display: flex; gap: 12px; align-items: flex-start;
-  font-size: 16px; color: rgba(255,255,255,0.92);
-  line-height: 1.55;
+  position: relative;
+  padding: 0 0 14px 26px;
+  font-size: 16px; color: #ffffff;
+  line-height: 1.6;
 }
+.masterclass .mc-bullets li:last-child { padding-bottom: 0; }
 .masterclass .mc-bullets li::before {
-  content: "▸"; color: var(--cyan); flex-shrink: 0;
+  content: "▸"; color: var(--cyan);
   font-weight: 800; font-size: 18px;
-  line-height: 1.4;
+  position: absolute; left: 0; top: 0;
+  line-height: 1.55;
 }
 .masterclass .mc-bullets li strong {
   color: #ffffff;
   font-weight: 800;
-  background: linear-gradient(180deg, rgba(0,174,239,0) 0%, rgba(0,174,239,0) 65%, rgba(0,174,239,0.35) 65%, rgba(0,174,239,0.35) 95%, rgba(0,174,239,0) 95%);
-  padding: 0 2px;
+  background: linear-gradient(180deg, rgba(0,174,239,0) 0%, rgba(0,174,239,0) 60%, rgba(0,174,239,0.45) 60%, rgba(0,174,239,0.45) 95%, rgba(0,174,239,0) 95%);
+  padding: 1px 4px;
+  border-radius: 2px;
 }
 .masterclass .mc-sub strong {
   color: var(--cyan); font-weight: 700;
@@ -3818,8 +3820,3 @@ window.addEventListener('beforeunload', (e) => {
 // Mark registered when masterclass form submitted
 document.getElementById('masterclassForm')?.addEventListener('submit', () => {
   sessionStorage.setItem('mc_registered', 'true');
-});
-</script>
-
-</body>
-</html>
