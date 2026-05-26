@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0a1845">
+<meta name="description" content="FREE MASTERCLASS — Kevin Murphy reveals what only the 1% of capital advisors know. The Bankable Certified Capital Advisor Difference.">
+<meta property="og:title" content="FREE MASTERCLASS: The Bankable Certified Capital Advisor Difference">
+<meta property="og:description" content="What only the 1% of capital advisors know. Hosted live by Kevin Murphy.">
+<meta property="og:type" content="website">
+<title>FREE MASTERCLASS · The Bankable Certified Capital Advisor Difference · Kevin Murphy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy-deep: #0a1845;
+  --navy: #2d388a;
+  --blue: #137dc5;
+  --cyan: #00aeef;
+  --cyan-soft: #7dd3fc;
+  --ink: #0f1729;
+  --slate: #4a5670;
+  --line: #e3e8f1;
+  --gradient: linear-gradient(135deg, #2d388a 0%, #137dc5 55%, #00aeef 100%);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  color: var(--ink); background: #f4f8fc;
+  line-height: 1.55; -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: 'Sora', sans-serif; font-weight: 800; line-height: 1.15; }
+.tm { font-size: 0.6em; vertical-align: super; opacity: 0.7; }
+a { color: var(--blue); text-decoration: none; }
+
+/* Top urgency bar */
+.mc-urgency {
+  background: linear-gradient(135deg, #00aeef 0%, #137dc5 100%);
+  color: white; padding: 12px 24px; text-align: center;
+  font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 700;
+  letter-spacing: 0.05em; display: flex; justify-content: center; align-items: center; gap: 12px;
+  flex-wrap: wrap;
+}
+.mc-urgency-dot {
+  width: 9px; height: 9px; border-radius: 50%; background: #7dd3fc;
+  box-shadow: 0 0 12px #7dd3fc;
+  animation: pulseDot 1.6s ease-in-out infinite;
+}
+@keyframes pulseDot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(0.85); } }
+
+/* Nav */
+.mc-nav {
+  background: white; padding: 16px 28px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-bottom: 1px solid var(--line);
+  position: sticky; top: 0; z-index: 100;
+}
+.mc-logo-link { display: inline-flex; align-items: center; gap: 10px; }
+.mc-logo-link img { height: 38px; width: auto; display: block; }
+.mc-logo-fallback {
+  font-family: 'Sora', sans-serif; font-weight: 800; font-size: 22px;
+  background: var(--gradient); background-clip: text; -webkit-background-clip: text; color: transparent;
+  display: none;
+}
+.mc-nav-cta {
+  background: linear-gradient(135deg, #00aeef 0%, #137dc5 100%);
+  color: white; font-family: 'Sora', sans-serif; font-weight: 700;
+  padding: 10px 18px; border-radius: 10px; font-size: 14px;
+  box-shadow: 0 8px 22px rgba(0,174,239,0.35);
+  transition: transform 0.2s ease;
+}
+.mc-nav-cta:hover { transform: translateY(-2px); color: white; }
+
+/* Hero */
+.mc-hero {
+  background: linear-gradient(180deg, #0a1845 0%, #142560 100%);
+  background-image:
+    radial-gradient(ellipse at 30% 20%, rgba(0,174,239,0.18), transparent 50%),
+    radial-gradient(ellipse at 70% 80%, rgba(125,211,252,0.10), transparent 50%),
+    linear-gradient(180deg, #0a1845 0%, #142560 100%);
+  color: white; padding: 70px 24px 90px;
+  text-align: center; position: relative; overflow: hidden;
+}
+.mc-hero-inner { max-width: 1100px; margin: 0 auto; }
+.mc-eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(0,174,239,0.18);
+  border: 1px solid rgba(0,174,239,0.4);
+  padding: 9px 18px; border-radius: 999px;
+  font-family: 'Sora', sans-serif; font-size: 12px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.15em;
+  color: #7dd3fc; margin-bottom: 22px;
+}
+.mc-h1 {
+  font-size: clamp(34px, 5.5vw, 60px);
+  margin: 0 0 18px; line-height: 1.1; text-wrap: balance;
+  color: white;
+}
+.mc-h1 .accent {
+  background: linear-gradient(90deg, #00aeef, #7dd3fc);
+  background-clip: text; -webkit-background-clip: text; color: transparent;
+}
+.mc-h1-sub {
+  font-size: clamp(17px, 2vw, 22px);
+  color: rgba(255,255,255,0.88);
+  font-weight: 500; max-width: 820px; margin: 0 auto 26px;
+  line-height: 1.5;
+}
+.mc-when {
+  display: inline-flex; align-items: center; gap: 16px;
+  background: rgba(125,211,252,0.1);
+  border: 1px solid rgba(125,211,252,0.25);
+  padding: 14px 24px; border-radius: 14px;
+  font-family: 'Sora', sans-serif; font-size: 15px; font-weight: 700;
+  color: white; margin-bottom: 36px;
+}
+.mc-when strong { color: #7dd3fc; }
+.mc-cta-bar {
+  display: flex; flex-direction: column; gap: 14px; align-items: center;
+}
+.mc-cta-primary {
+  background: linear-gradient(135deg, #00aeef 0%, #137dc5 100%);
+  color: white; font-family: 'Sora', sans-serif; font-weight: 800;
+  font-size: 19px; padding: 20px 38px; border-radius: 14px;
+  display: inline-block; border: none; cursor: pointer;
+  box-shadow: 0 20px 50px rgba(0,174,239,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.mc-cta-primary:hover { transform: translateY(-3px); box-shadow: 0 26px 60px rgba(0,174,239,0.55); color: white; }
+.mc-cta-microcopy { font-size: 12px; color: rgba(255,255,255,0.65); }
+
+/* Body sections - ALL CENTERED BY DEFAULT */
+.mc-section {
+  padding: 90px 24px;
+  position: relative;
+  text-align: center;
+}
+.mc-section-light { background: #f4f8fc; }
+.mc-section-white { background: white; }
+.mc-section-dark { background: linear-gradient(180deg, #0a1845 0%, #142560 100%); color: white; }
+.mc-container { max-width: 1180px; margin: 0 auto; }
+.mc-section-eyebrow {
+  display: inline-block; font-family: 'Sora', sans-serif;
+  font-size: 12px; font-weight: 800; color: #0a4a78;
+  text-transform: uppercase; letter-spacing: 0.18em;
+  margin-bottom: 14px;
+}
+.mc-section-dark .mc-section-eyebrow { color: #7dd3fc; }
+.mc-section-h2 {
+  font-size: clamp(32px, 4.5vw, 44px);
+  color: var(--navy-deep); margin: 0 auto 18px;
+  line-height: 1.18; text-wrap: balance; max-width: 880px;
+  text-align: center;
+}
+.mc-section-dark .mc-section-h2 { color: white; }
+.mc-section-h2 .accent {
+  background: var(--gradient); background-clip: text; -webkit-background-clip: text; color: transparent;
+}
+.mc-section-lede {
+  font-size: 18px; color: var(--slate); line-height: 1.6;
+  max-width: 800px; margin: 0 auto 40px;
+  text-align: center;
+}
+.mc-section-dark .mc-section-lede { color: rgba(255,255,255,0.82); }
+.mc-center { text-align: center; }
+
+/* ===== MARKET OPPORTUNITY STATS ===== */
+.mc-market {
+  background: linear-gradient(135deg, #0a1845 0%, #2d388a 50%, #137dc5 100%);
+  color: white; padding: 90px 24px;
+  position: relative; overflow: hidden;
+  perspective: 1500px;
+  text-align: center;
+}
+.mc-market::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(0,174,239,0.15), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(125,211,252,0.12), transparent 45%);
+  pointer-events: none;
+}
+.mc-market-h2 { color: white; }
+.mc-market-h2 .accent {
+  background: linear-gradient(90deg, #00aeef, #7dd3fc);
+  background-clip: text; -webkit-background-clip: text; color: transparent;
+}
+.mc-market-lede { color: rgba(255,255,255,0.88); }
+.mc-stats-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px;
+  max-width: 1180px; margin: 50px auto 0;
+}
+.mc-stat {
+  background: rgba(255,255,255,0.06); backdrop-filter: blur(12px);
+  border: 1px solid rgba(125,211,252,0.2); border-radius: 18px;
+  padding: 36px 24px; text-align: center;
+  transition: transform 0.5s cubic-bezier(0.2,0.7,0.3,1.1), border-color 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+  opacity: 0; transform: translateY(30px) rotateX(20deg) scale(0.92);
+}
+.mc-market.bk-stats-revealed .mc-stat {
+  opacity: 1; transform: translateY(0) rotateX(0) scale(1);
+}
+.mc-market.bk-stats-revealed .mc-stat:nth-child(1) { transition-delay: 0.08s; }
+.mc-market.bk-stats-revealed .mc-stat:nth-child(2) { transition-delay: 0.18s; }
+.mc-market.bk-stats-revealed .mc-stat:nth-child(3) { transition-delay: 0.28s; }
+.mc-market.bk-stats-revealed .mc-stat:nth-child(4) { transition-delay: 0.38s; }
+.mc-stat:hover {
+  transform: translateY(-10px) rotateX(4deg) scale(1.04);
+  border-color: rgba(0,174,239,0.6);
+  box-shadow: 0 32px 70px -22px rgba(0,174,239,0.45);
+}
+.mc-stat-num {
+  font-family: 'Sora', sans-serif; font-size: clamp(38px, 4.5vw, 56px); font-weight: 800;
+  background: linear-gradient(135deg, #00aeef, #7dd3fc);
+  background-clip: text; -webkit-background-clip: text; color: transparent;
+  line-height: 1; margin-bottom: 10px;
+}
+.mc-stat-label {
+  font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 700;
+  color: white; text-transform: uppercase; letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+.mc-stat-sub {
+  font-size: 13px; color: rgba(255,255,255,0.7); line-height: 1.4;
+}
+.mc-market-sources {
+  text-align: center; margin-top: 36px;
+  font-size: 12px; color: rgba(255,255,255,0.5);
+  font-style: italic;
+}
+
+/* ===== OUTCOMES SECTION ===== */
+.mc-outcomes-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  max-width: 1180px; margin: 40px auto 0;
+  perspective: 1500px;
+}
+.mc-outcome {
+  background: white; padding: 36px 28px;
+  border-radius: 20px; border: 1px solid var(--line);
+  box-shadow: 0 18px 44px -22px rgba(19,125,197,0.18);
+  text-align: left;
+  transition: transform 0.5s cubic-bezier(0.2,0.7,0.3,1.1), box-shadow 0.4s ease, border-color 0.4s ease;
+  transform-style: preserve-3d;
+  opacity: 0; transform: translateY(28px) rotateX(15deg);
+}
+.mc-section.bk-outcomes-revealed .mc-outcome {
+  opacity: 1; transform: translateY(0) rotateX(0);
+}
+.mc-section.bk-outcomes-revealed .mc-outcome:nth-child(1) { transition-delay: 0.06s; }
+.mc-section.bk-outcomes-revealed .mc-outcome:nth-child(2) { transition-delay: 0.14s; }
+.mc-section.bk-outcomes-revealed .mc-outcome:nth-child(3) { transition-delay: 0.22s; }
+.mc-section.bk-outcomes-revealed .mc-outcome:nth-child(4) { transition-delay: 0.30s; }
+.mc-section.bk-outcomes-revealed .mc-outcome:nth-child(5) { transition-delay: 0.38s; }
+.mc-outcome:hover {
+  transform: translateY(-8px) rotateX(2deg);
+  border-color: var(--cyan);
+  box-shadow: 0 30px 70px -22px rgba(0,174,239,0.35);
+}
+.mc-outcome-icon {
+  width: 56px; height: 56px; border-radius: 14px;
+  background: var(--gradient); color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; font-weight: 800; margin-bottom: 20px;
+}
+.mc-outcome h4 {
+  font-size: 22px; color: var(--navy-deep); margin: 0 0 12px;
+}
+.mc-outcome p {
+  font-size: 15px; color: var(--slate); line-height: 1.55;
+}
+.mc-outcome-metric {
+  display: inline-block; margin-top: 14px; padding: 6px 12px;
+  background: rgba(0,174,239,0.08); color: var(--blue);
+  font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 800;
+  border-radius: 6px; letter-spacing: 0.04em;
+}
+
+/* ===== SUPERPOWERS ON MASTERCLASS PAGE ===== */
+.mc-superpowers {
+  background: linear-gradient(180deg, #0a1845 0%, #142560 100%);
+  color: white; padding: 90px 24px;
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+.mc-superpowers::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 25% 40%, rgba(0,174,239,0.12), transparent 45%),
+    radial-gradient(circle at 75% 60%, rgba(125,211,252,0.08), transparent 45%);
+  pointer-events: none;
+}
+.mc-superpowers > * { position: relative; z-index: 1; }
+.mc-sp-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  max-width: 1180px; margin: 40px auto 0;
+  perspective: 1500px;
+}
+.mc-sp-col {
+  background: rgba(255,255,255,0.04); backdrop-filter: blur(10px);
+  border: 1px solid rgba(125,211,252,0.18); border-radius: 20px;
+  padding: 32px 26px;
+  text-align: left;
+  transition: transform 0.5s cubic-bezier(0.2,0.7,0.3,1.1), border-color 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+  opacity: 0; transform: translateY(24px) rotateX(12deg);
+}
+.mc-superpowers.bk-sp-revealed .mc-sp-col {
+  opacity: 1; transform: translateY(0) rotateX(0);
+}
+.mc-superpowers.bk-sp-revealed .mc-sp-col:nth-child(1) { transition-delay: 0.08s; }
+.mc-superpowers.bk-sp-revealed .mc-sp-col:nth-child(2) { transition-delay: 0.18s; }
+.mc-superpowers.bk-sp-revealed .mc-sp-col:nth-child(3) { transition-delay: 0.28s; }
+.mc-sp-col:hover {
+  transform: translateY(-8px) rotateX(2deg);
+  border-color: rgba(0,174,239,0.5);
+  box-shadow: 0 32px 70px -22px rgba(0,174,239,0.4);
+}
+.mc-sp-num {
+  font-family: 'Sora', sans-serif; font-size: 12px; font-weight: 800;
+  color: var(--cyan); letter-spacing: 0.2em; display: block;
+}
+.mc-sp-col h3 { font-size: 22px; color: white; margin: 8px 0 6px; }
+.mc-sp-tag { font-size: 14px; color: rgba(125,211,252,0.85); font-style: italic; line-height: 1.4; margin-bottom: 18px; padding-bottom: 16px; border-bottom: 1px dashed rgba(125,211,252,0.18); }
+.mc-sp-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 11px; }
+.mc-sp-list li {
+  font-size: 14.5px; color: rgba(255,255,255,0.94); line-height: 1.4;
+  padding-left: 22px; position: relative;
+}
+.mc-sp-list li::before {
+  content: '◆'; position: absolute; left: 0; top: 1px;
+  color: var(--cyan); font-size: 10px;
+}
+
+/* ===== MEET YOUR PEERS (WITH REAL PHOTOS) ===== */
+.mc-peers-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  max-width: 1180px; margin: 40px auto 0;
+  perspective: 1500px;
+}
+.mc-peer {
+  background: white; border-radius: 20px; padding: 28px;
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 44px -22px rgba(19,125,197,0.18);
+  text-align: left;
+  transition: transform 0.5s cubic-bezier(0.2,0.7,0.3,1.1), box-shadow 0.4s ease, border-color 0.4s ease;
+  transform-style: preserve-3d;
+  opacity: 0; transform: translateY(28px) rotateX(15deg) scale(0.95);
+}
+.mc-section.bk-peers-revealed .mc-peer {
+  opacity: 1; transform: translateY(0) rotateX(0) scale(1);
+}
+.mc-section.bk-peers-revealed .mc-peer:nth-child(1) { transition-delay: 0.05s; }
+.mc-section.bk-peers-revealed .mc-peer:nth-child(2) { transition-delay: 0.12s; }
+.mc-section.bk-peers-revealed .mc-peer:nth-child(3) { transition-delay: 0.19s; }
+.mc-section.bk-peers-revealed .mc-peer:nth-child(4) { transition-delay: 0.26s; }
+.mc-section.bk-peers-revealed .mc-peer:nth-child(5) { transition-delay: 0.33s; }
+.mc-section.bk-peers-revealed .mc-peer:nth-child(6) { transition-delay: 0.40s; }
+.mc-peer:hover {
+  transform: translateY(-8px) rotateX(2deg);
+  border-color: var(--cyan);
+  box-shadow: 0 30px 70px -22px rgba(0,174,239,0.32);
+}
+.mc-peer-head {
+  display: flex; gap: 14px; align-items: center;
+  margin-bottom: 16px; padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+.mc-peer-photo {
+  width: 64px; height: 64px; border-radius: 50%;
+  object-fit: cover; flex-shrink: 0;
+  border: 2px solid var(--cyan);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Sora', sans-serif; font-weight: 800; font-size: 22px;
+  color: white;
+  box-shadow: 0 10px 24px -8px rgba(0,174,239,0.45);
+}
+.mc-peer-photo.mc-peer-photo-1 { background: linear-gradient(135deg, #00aeef 0%, #137dc5 100%); }
+.mc-peer-photo.mc-peer-photo-2 { background: linear-gradient(135deg, #137dc5 0%, #2d388a 100%); }
+.mc-peer-photo.mc-peer-photo-3 { background: linear-gradient(135deg, #0a1845 0%, #2d388a 100%); }
+.mc-peer-photo.mc-peer-photo-4 { background: linear-gradient(135deg, #7dd3fc 0%, #00aeef 100%); color: #0a1845; }
+.mc-peer-photo.mc-peer-photo-5 { background: linear-gradient(135deg, #2d388a 0%, #137dc5 100%); }
+.mc-peer-photo.mc-peer-photo-6 { background: linear-gradient(135deg, #00aeef 0%, #7dd3fc 100%); color: #0a1845; }
+.mc-peer-name { font-family: 'Sora', sans-serif; font-weight: 800; color: var(--navy-deep); font-size: 16px; }
+.mc-peer-role { font-size: 13px; color: var(--slate); margin-top: 2px; }
+.mc-peer-city { font-size: 12px; color: var(--blue); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
+.mc-peer-quote {
+  font-size: 15px; color: var(--ink); line-height: 1.55;
+  font-style: italic;
+}
+.mc-peer-result {
+  margin-top: 14px; padding: 10px 14px;
+  background: rgba(0,174,239,0.08); border-left: 3px solid var(--cyan);
+  border-radius: 8px;
+  font-size: 13px; font-weight: 700; color: var(--navy-deep);
+}
+
+@media (max-width: 980px) {
+  .mc-stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .mc-outcomes-grid { grid-template-columns: 1fr; }
+  .mc-sp-grid { grid-template-columns: 1fr; }
+  .mc-peers-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 540px) {
+  .mc-stats-grid { grid-template-columns: 1fr; }
+}
+
+/* Promise stack */
+.mc-promise-list {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px;
+  max-width: 1100px; margin: 0 auto;
+}
+.mc-promise {
+  background: white; padding: 26px 28px;
+  border: 1px solid var(--line); border-radius: 16px;
+  display: flex; gap: 16px; align-items: flex-start;
+  box-shadow: 0 14px 36px -20px rgba(19,125,197,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mc-promise:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 26px 60px -22px rgba(19,125,197,0.3);
+}
+.mc-promise-icon {
+  flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px;
+  background: var(--gradient); color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; font-weight: 800;
+}
+.mc-promise-text {
+  font-size: 16px; color: var(--ink); line-height: 1.55;
+}
+.mc-promise-text strong { color: var(--navy-deep); font-weight: 800; }
+
+/* Speaker bio - AUTHORITY REBUILD */
+.mc-bio {
+  display: grid; grid-template-columns: 440px 1fr; gap: 56px;
+  align-items: stretch; max-width: 1240px; margin: 0 auto;
+  text-align: left;
+}
+.mc-bio-portrait-wrap {
+  position: relative; border-radius: 24px; overflow: hidden;
+  box-shadow: 0 50px 100px -30px rgba(0,174,239,0.45), 0 0 0 2px rgba(125,211,252,0.3);
+  background: linear-gradient(135deg, #0a1845 0%, #137dc5 100%);
+  min-height: 540px;
+}
+.mc-bio-portrait {
+  width: 100%; height: 100%; min-height: 540px;
+  object-fit: cover; object-position: center 18%;
+  display: block;
+}
+.mc-bio-portrait-overlay {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(10,24,69,0.95) 100%);
+  padding: 36px 28px 24px;
+  text-align: left;
+}
+.mc-bio-portrait-name {
+  font-family: 'Sora', sans-serif; font-size: 26px; font-weight: 800;
+  color: white; line-height: 1.1; margin-bottom: 4px;
+}
+.mc-bio-portrait-title {
+  font-family: 'Sora', sans-serif; font-size: 12px; font-weight: 700;
+  color: #7dd3fc; text-transform: uppercase; letter-spacing: 0.14em;
+}
+.mc-bio-content {
+  display: flex; flex-direction: column; justify-content: center;
+}
+.mc-bio-eyebrow {
+  font-family: 'Sora', sans-serif; font-size: 12px; font-weight: 800;
+  color: #7dd3fc; text-transform: uppercase; letter-spacing: 0.18em;
+  margin-bottom: 14px; display: inline-block;
+}
+.mc-bio-h3 {
+  font-family: 'Sora', sans-serif; font-size: clamp(26px, 3vw, 36px);
+  font-weight: 800; color: white; margin: 0 0 22px;
+  line-height: 1.18; text-wrap: balance;
+}
+.mc-bio-h3 .accent {
+  background: linear-gradient(90deg, #00aeef, #7dd3fc);
+  background-clip: text; -webkit-background-clip: text; color: transparent;
+}
+.mc-bio-content p {
+  font-size: 16px; color: rgba(255,255,255,0.88); line-height: 1.7;
+  margin-bottom: 14px;
+}
+.mc-bio-content p strong { color: #7dd3fc; }
+.mc-bio-stats {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+  margin-top: 28px; padding-top: 28px;
+  border-top: 1px solid rgba(125,211,252,0.2);
+}
+.mc-bio-stat {
+  text-align: center; padding: 12px 8px;
+}
+.mc-bio-stat-num {
+  font-family: 'Sora', sans-serif; font-size: clamp(22px, 2.4vw, 30px); font-weight: 800;
+  background: linear-gradient(135deg, #00aeef, #7dd3fc);
+  background-clip: text; -webkit-background-clip: text; color: transparent;
+  line-height: 1; margin-bottom: 6px;
+}
+.mc-bio-stat-label {
+  font-family: 'Sora', sans-serif; font-size: 11px; font-weight: 700;
+  color: rgba(255,255,255,0.85); text-transform: uppercase; letter-spacing: 0.08em;
+  line-height: 1.3;
+}
+
+@media (max-width: 980px) {
+  .mc-bio { grid-template-columns: 1fr; gap: 36px; }
+  .mc-bio-portrait-wrap { min-height: 380px; max-width: 440px; margin: 0 auto; }
+  .mc-bio-portrait { min-height: 380px; }
+  .mc-bio-stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===== PAIN AGITATION SECTION (Hughes pattern) ===== */
+.mc-pain {
+  background: #ffffff; padding: 90px 24px;
+  text-align: center;
+}
+.mc-pain-container { max-width: 920px; margin: 0 auto; }
+.mc-pain h2 {
+  font-family: 'Sora', sans-serif; font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800; color: var(--navy-deep); line-height: 1.2;
+  text-wrap: balance; margin: 0 auto 22px;
+}
+.mc-pain h2 .red { color: #c91f2c; }
+.mc-pain-lede {
+  font-size: 17px; color: var(--ink); line-height: 1.7;
+  max-width: 760px; margin: 0 auto 30px;
+}
+.mc-pain-lede strong { color: var(--navy-deep); }
+.mc-pain-points {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+  max-width: 1080px; margin: 36px auto 0;
+}
+.mc-pain-point {
+  background: #f4f8fc; padding: 24px 22px; border-radius: 14px;
+  border-left: 4px solid #c91f2c;
+  text-align: left;
+}
+.mc-pain-point h4 {
+  font-family: 'Sora', sans-serif; font-size: 16px; font-weight: 800;
+  color: var(--navy-deep); margin: 0 0 8px;
+}
+.mc-pain-point p {
+  font-size: 14px; color: var(--slate); line-height: 1.5; margin: 0;
+}
+@media (max-width: 880px) {
+  .mc-pain-points { grid-template-columns: 1fr; }
+}
+
+/* ===== CONSEQUENCES (Loss-frame) ===== */
+.mc-consequences {
+  background: linear-gradient(180deg, #0a1845 0%, #142560 100%);
+  color: white; padding: 90px 24px; text-align: center;
+  position: relative; overflow: hidden;
+}
+.mc-consequences::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, transparent, #c91f2c, transparent);
+}
+.mc-cons-container { max-width: 920px; margin: 0 auto; }
+.mc-consequences h2 {
+  font-family: 'Sora', sans-serif; font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800; color: white; line-height: 1.2;
+  text-wrap: balance; margin: 0 0 18px;
+}
+.mc-consequences h2 .accent {
+  background: linear-gradient(90deg, #c91f2c, #ff5a4a);
+  background-clip: text; -webkit-background-clip: text; color: transparent;
+}
+.mc-cons-lede {
+  font-size: 17px; color: rgba(255,255,255,0.82); line-height: 1.6;
+  max-width: 760px; margin: 0 auto 36px;
+}
+.mc-cons-list {
+  list-style: none; padding: 0; margin: 0 auto 36px;
+  max-width: 720px; text-align: left;
+  display: flex; flex-direction: column; gap: 14px;
+}
+.mc-cons-list li {
+  font-size: 16px; color: rgba(255,255,255,0.95); line-height: 1.55;
+  padding: 14px 18px 14px 50px; position: relative;
+  background: rgba(255,255,255,0.04); border-radius: 10px;
+  border-left: 3px solid #c91f2c;
+}
+.mc-cons-list li::before {
+  content: '✕'; position: absolute; left: 18px; top: 13px;
+  color: #c91f2c; font-weight: 800; font-size: 18px;
+}
+.mc-cons-final {
+  font-family: 'Sora', sans-serif; font-size: 19px; font-weight: 600;
+  color: white; line-height: 1.5; margin: 28px 0;
+}
+.mc-cons-final strong { color: #7dd3fc; }
+
+/* ===== BONUS GAMIFICATION (First 20 spots) ===== */
+.mc-bonus {
+  background: #ffffff; padding: 70px 24px;
+  position: relative; overflow: hidden;
+}
+.mc-bonus-container {
+  max-width: 1080px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 380px; gap: 48px;
+  align-items: center;
+}
+.mc-bonus-left { text-align: left; }
+.mc-bonus-flag {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: linear-gradient(135deg, #c91f2c 0%, #e63946 100%);
+  color: white; font-family: 'Sora', sans-serif;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.16em;
+  padding: 8px 16px; border-radius: 999px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 24px rgba(201,31,44,0.45);
+  animation: bonusFlagPulse 2s ease-in-out infinite;
+  margin-bottom: 18px;
+}
+.mc-bonus-flag::before {
+  content: '🔥'; font-size: 14px;
+}
+@keyframes bonusFlagPulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 8px 24px rgba(201,31,44,0.45); }
+  50% { transform: scale(1.04); box-shadow: 0 12px 36px rgba(201,31,44,0.7); }
+}
+.mc-bonus-h2 {
+  font-family: 'Sora', sans-serif; font-size: clamp(28px, 4vw, 38px);
+  font-weight: 800; color: var(--navy-deep); line-height: 1.2;
+  margin: 0 0 16px;
+}
+.mc-bonus-h2 .accent {
+  background: var(--gradient); background-clip: text; -webkit-background-clip: text; color: transparent;
+}
+.mc-bonus-desc {
+  font-size: 16px; color: var(--ink); line-height: 1.65;
+  margin-bottom: 22px;
+}
+.mc-bonus-list {
+  list-style: none; padding: 0; margin: 0 0 24px;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.mc-bonus-list li {
+  font-size: 15px; color: var(--ink); line-height: 1.5;
+  padding-left: 28px; position: relative;
+}
+.mc-bonus-list li::before {
+  content: '✓'; position: absolute; left: 0; top: 0;
+  background: linear-gradient(135deg, #00aeef, #137dc5);
+  color: white; width: 20px; height: 20px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 800;
+}
+.mc-bonus-pricing {
+  display: flex; align-items: baseline; gap: 14px; margin-top: 24px;
+  flex-wrap: wrap;
+}
+.mc-bonus-price-original {
+  font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700;
+  color: var(--slate); text-decoration: line-through;
+}
+.mc-bonus-price-now {
+  font-family: 'Sora', sans-serif; font-size: 38px; font-weight: 800;
+  background: linear-gradient(135deg, #c91f2c, #e63946);
+  background-clip: text; -webkit-background-clip: text; color: transparent;
+}
+.mc-bonus-price-label {
+  font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 800;
+  color: var(--navy-deep); text-transform: uppercase; letter-spacing: 0.1em;
+}
+
+.mc-bonus-right {
+  position: relative;
+  background: linear-gradient(145deg, #0a1845 0%, #2d388a 100%);
+  border-radius: 24px; padding: 36px 28px;
+  text-align: center; color: white;
+  box-shadow: 0 40px 90px -30px rgba(10,24,69,0.4);
+  border: 2px solid rgba(0,174,239,0.4);
+  transform-style: preserve-3d;
+  animation: bonusCardFloat 6s ease-in-out infinite;
+}
+@keyframes bonusCardFloat {
+  0%, 100% { transform: translateY(0) rotateX(0); }
+  50% { transform: translateY(-8px) rotateX(2deg); }
+}
+.mc-bonus-right::before {
+  content: ''; position: absolute; top: -2px; left: 30px; right: 30px; height: 4px;
+  background: linear-gradient(90deg, transparent, #c91f2c, transparent);
+  animation: stripeShimmer 3s ease-in-out infinite;
+}
+@keyframes stripeShimmer {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+.mc-bonus-seal {
+  width: 88px; height: 88px; margin: 0 auto 18px;
+  background: linear-gradient(135deg, #c91f2c, #e63946);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 38px;
+  box-shadow: 0 20px 50px rgba(201,31,44,0.55);
+  animation: sealSpin 8s linear infinite;
+}
+@keyframes sealSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.mc-bonus-seal::before { content: '🎁'; }
+.mc-bonus-counter-label {
+  font-family: 'Sora', sans-serif; font-size: 12px; font-weight: 800;
+  color: #7dd3fc; text-transform: uppercase; letter-spacing: 0.18em;
+  margin-bottom: 8px;
+}
+.mc-bonus-counter-num {
+  font-family: 'Sora', sans-serif; font-size: 64px; font-weight: 800;
+  background: linear-gradient(135deg, #00aeef, #7dd3fc);
+  background-clip: text; -webkit-background-clip: text; color: transparent;
+  line-height: 1; margin-bottom: 4px;
+}
+.mc-bonus-counter-total {
+  font-family: 'Sora', sans-serif; font-size: 14px; font-weight: 700;
+  color: rgba(255,255,255,0.7);
+}
+.mc-bonus-counter-bar {
+  width: 100%; height: 8px; border-radius: 4px;
+  background: rgba(255,255,255,0.08); margin: 18px 0 12px;
+  overflow: hidden; position: relative;
+}
+.mc-bonus-counter-bar-fill {
+  height: 100%; background: linear-gradient(90deg, #c91f2c, #e63946);
+  border-radius: 4px;
+  transition: width 1s cubic-bezier(0.2,0.7,0.3,1.1);
+  box-shadow: 0 0 14px rgba(201,31,44,0.6);
+}
+.mc-bonus-counter-warn {
+  font-family: 'Sora', sans-serif; font-size: 12px; font-weight: 700;
+  color: #ff9e9e; letter-spacing: 0.08em; text-transform: uppercase;
+  margin-top: 8px;
+}
+@media (max-width: 880px) {
+  .mc-bonus-container { grid-template-columns: 1fr; gap: 32px; }
+  .mc-bonus-right { order: -1; max-width: 380px; margin: 0 auto; }
+}
+
+/* ===== ANIMATED STAT NUMBERS (count-up) ===== */
+[data-bk-count] {
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ===== PULSING CTAs ===== */
+.mc-cta-training {
+  animation: ctaPulse 2.4s ease-in-out infinite;
+}
+@keyframes ctaPulse {
+  0%, 100% { box-shadow: 0 22px 56px rgba(201,31,44,0.45), 0 0 0 0 rgba(201,31,44,0.5); }
+  50% { box-shadow: 0 22px 56px rgba(201,31,44,0.45), 0 0 0 18px rgba(201,31,44,0); }
+}
+
+/* ===== FLOATING ORBS IN HERO ===== */
+.mc-hero-orb {
+  position: absolute; border-radius: 50%;
+  filter: blur(40px); opacity: 0.6;
+  pointer-events: none; z-index: 0;
+  animation: orbFloat 18s ease-in-out infinite;
+}
+.mc-hero-orb-1 {
+  width: 380px; height: 380px;
+  background: radial-gradient(circle, rgba(0,174,239,0.55), transparent 65%);
+  top: 8%; left: -8%;
+  animation-delay: 0s;
+}
+.mc-hero-orb-2 {
+  width: 460px; height: 460px;
+  background: radial-gradient(circle, rgba(125,211,252,0.35), transparent 65%);
+  bottom: 5%; right: -10%;
+  animation-delay: -6s;
+}
+.mc-hero-orb-3 {
+  width: 280px; height: 280px;
+  background: radial-gradient(circle, rgba(45,56,138,0.5), transparent 65%);
+  top: 50%; right: 25%;
+  animation-delay: -12s;
+}
+@keyframes orbFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(40px, -30px) scale(1.1); }
+  50% { transform: translate(-30px, 40px) scale(0.95); }
+  75% { transform: translate(50px, 20px) scale(1.05); }
+}
+.mc-hero-inner { position: relative; z-index: 2; }
+
+/* ===== PROMISE CARDS 3D REVEAL ===== */
+.mc-promise-list { perspective: 1500px; }
+.mc-promise {
+  opacity: 0; transform: translateY(28px) rotateX(15deg);
+  transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.2,0.7,0.3,1.1), box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+.mc-section.bk-promises-revealed .mc-promise {
+  opacity: 1; transform: translateY(0) rotateX(0);
+}
+.mc-section.bk-promises-revealed .mc-promise:nth-child(1) { transition-delay: 0.06s; }
+.mc-section.bk-promises-revealed .mc-promise:nth-child(2) { transition-delay: 0.14s; }
+.mc-section.bk-promises-revealed .mc-promise:nth-child(3) { transition-delay: 0.22s; }
+.mc-section.bk-promises-revealed .mc-promise:nth-child(4) { transition-delay: 0.30s; }
+.mc-section.bk-promises-revealed .mc-promise:nth-child(5) { transition-delay: 0.38s; }
+.mc-section.bk-promises-revealed .mc-promise:nth-child(6) { transition-delay: 0.46s; }
+
+/* ===== PAIN POINTS 3D REVEAL ===== */
+.mc-pain-points { perspective: 1500px; }
+.mc-pain-point {
+  opacity: 0; transform: translateY(24px) rotateX(12deg);
+  transition: opacity 0.5s ease-out, transform 0.6s cubic-bezier(0.2,0.7,0.3,1.1), box-shadow 0.3s ease;
+}
+.mc-pain.bk-pain-revealed .mc-pain-point {
+  opacity: 1; transform: translateY(0) rotateX(0);
+}
+.mc-pain.bk-pain-revealed .mc-pain-point:nth-child(1) { transition-delay: 0.08s; }
+.mc-pain.bk-pain-revealed .mc-pain-point:nth-child(2) { transition-delay: 0.18s; }
+.mc-pain.bk-pain-revealed .mc-pain-point:nth-child(3) { transition-delay: 0.28s; }
+.mc-pain-point:hover {
+  transform: translateY(-4px) rotateX(2deg);
+  box-shadow: 0 22px 50px -22px rgba(201,31,44,0.3);
+}
+
+/* ===== CONSEQUENCE STAGGER ===== */
+.mc-cons-list li {
+  opacity: 0; transform: translateX(-20px);
+  transition: opacity 0.5s ease-out, transform 0.5s cubic-bezier(0.2,0.7,0.3,1.1);
+}
+.mc-consequences.bk-cons-revealed .mc-cons-list li {
+  opacity: 1; transform: translateX(0);
+}
+.mc-consequences.bk-cons-revealed .mc-cons-list li:nth-child(1) { transition-delay: 0.08s; }
+.mc-consequences.bk-cons-revealed .mc-cons-list li:nth-child(2) { transition-delay: 0.18s; }
+.mc-consequences.bk-cons-revealed .mc-cons-list li:nth-child(3) { transition-delay: 0.28s; }
+.mc-consequences.bk-cons-revealed .mc-cons-list li:nth-child(4) { transition-delay: 0.38s; }
+.mc-consequences.bk-cons-revealed .mc-cons-list li:nth-child(5) { transition-delay: 0.48s; }
+
+/* ===== BIO STATS COUNT-UP REVEAL ===== */
+.mc-bio-stat {
+  opacity: 0; transform: translateY(16px) rotateY(10deg);
+  transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.2,0.7,0.3,1.1);
+}
+.mc-section.bk-bio-revealed .mc-bio-stat {
+  opacity: 1; transform: translateY(0) rotateY(0);
+}
+.mc-section.bk-bio-revealed .mc-bio-stat:nth-child(1) { transition-delay: 0.10s; }
+.mc-section.bk-bio-revealed .mc-bio-stat:nth-child(2) { transition-delay: 0.22s; }
+.mc-section.bk-bio-revealed .mc-bio-stat:nth-child(3) { transition-delay: 0.34s; }
+.mc-section.bk-bio-revealed .mc-bio-stat:nth-child(4) { transition-delay: 0.46s; }
+
+/* ===== HUGHES-STYLE CTA BUTTONS ===== */
+.mc-cta-training {
+  background: linear-gradient(135deg, #c91f2c 0%, #e63946 100%);
+  color: white; font-family: 'Sora', sans-serif; font-weight: 800;
+  font-size: 19px; padding: 22px 38px; border-radius: 14px;
+  display: inline-block; border: none; cursor: pointer;
+  box-shadow: 0 22px 56px rgba(201,31,44,0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+.mc-cta-training:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 28px 70px rgba(201,31,44,0.6);
+  color: white;
+}
+.mc-cta-training-sub {
+  display: block; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.18em; margin-top: 6px; opacity: 0.95;
+  text-transform: uppercase;
+}
+
+/* Registration form */
+.mc-form-wrap {
+  background: white; border-radius: 24px; padding: 40px 36px;
+  max-width: 720px; margin: 40px auto 0;
+  box-shadow: 0 40px 100px -30px rgba(10,24,69,0.4);
+  border: 2px solid var(--cyan);
+  position: relative;
+}
+.mc-form-wrap::before {
+  content: 'SAVE YOUR SEAT'; position: absolute; top: -14px; left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #00aeef 0%, #137dc5 100%);
+  color: white; font-family: 'Sora', sans-serif; font-size: 11px;
+  font-weight: 800; padding: 8px 18px; border-radius: 999px;
+  letter-spacing: 0.18em;
+}
+.mc-form-title {
+  font-size: 24px; color: var(--navy-deep); margin: 0 0 8px;
+  text-align: center;
+}
+.mc-form-sub {
+  font-size: 14px; color: var(--slate);
+  text-align: center; margin-bottom: 22px;
+}
+.mc-form-frame { min-height: 480px; }
+.mc-form-frame iframe {
+  width: 100%; min-height: 480px; border: 0; border-radius: 12px;
+}
+
+/* Testimonials */
+.mc-tests {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+  max-width: 1180px; margin: 40px auto 0;
+}
+.mc-test {
+  background: white; padding: 28px;
+  border-radius: 16px; border: 1px solid var(--line);
+  box-shadow: 0 14px 36px -22px rgba(19,125,197,0.15);
+}
+.mc-test-text {
+  font-size: 15px; color: var(--ink); line-height: 1.55;
+  margin-bottom: 18px; font-style: italic;
+}
+.mc-test-author {
+  display: flex; gap: 12px; align-items: center;
+  padding-top: 14px; border-top: 1px solid var(--line);
+}
+.mc-test-avatar {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: var(--gradient); color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Sora', sans-serif; font-weight: 800; font-size: 13px;
+}
+.mc-test-name { font-family: 'Sora', sans-serif; font-weight: 800; color: var(--navy-deep); font-size: 14px; }
+.mc-test-role { font-size: 12px; color: var(--slate); }
+
+/* FAQ */
+.mc-faq-list { max-width: 820px; margin: 30px auto 0; }
+.mc-faq-item {
+  background: white; border-radius: 14px;
+  border: 1px solid var(--line); margin-bottom: 12px;
+  overflow: hidden;
+}
+.mc-faq-item summary {
+  cursor: pointer; padding: 22px 26px;
+  font-family: 'Sora', sans-serif; font-size: 16px; font-weight: 700;
+  color: var(--navy-deep); list-style: none;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.mc-faq-item summary::-webkit-details-marker { display: none; }
+.mc-faq-item summary::after {
+  content: '+'; font-size: 24px; color: var(--cyan); font-weight: 800;
+  transition: transform 0.2s ease;
+}
+.mc-faq-item[open] summary::after { transform: rotate(45deg); }
+.mc-faq-body {
+  padding: 0 26px 22px; color: var(--slate); font-size: 15px; line-height: 1.6;
+}
+
+/* Final CTA */
+.mc-final-cta {
+  background: linear-gradient(135deg, #0a1845 0%, #2d388a 100%);
+  padding: 70px 28px; text-align: center; color: white;
+  position: relative; overflow: hidden;
+}
+.mc-final-cta::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+}
+.mc-final-cta h2 {
+  font-size: clamp(28px, 4vw, 40px); margin: 0 0 18px;
+  color: white; line-height: 1.2;
+}
+.mc-final-cta p { font-size: 17px; color: rgba(255,255,255,0.85); margin-bottom: 28px; }
+
+/* Footer */
+.mc-footer {
+  background: #0a1845; color: rgba(255,255,255,0.7);
+  padding: 36px 28px; text-align: center;
+  font-size: 13px;
+}
+.mc-footer a { color: #7dd3fc; }
+
+/* Responsive */
+@media (max-width: 960px) {
+  .mc-promise-list { grid-template-columns: 1fr; }
+  .mc-tests { grid-template-columns: 1fr; }
+  .mc-bio { grid-template-columns: 1fr; text-align: center; }
+  .mc-bio-portrait { margin: 0 auto; }
+}
+@media (max-width: 720px) {
+  .mc-section { padding: 60px 18px; }
+  .mc-hero { padding: 50px 18px 70px; }
+  .mc-form-wrap { padding: 32px 22px; }
+}
+</style>
+</head>
+<body>
+
+<!-- URGENCY BAR - Hughes-style authority claim -->
+<div class="mc-urgency">
+  <span class="mc-urgency-dot"></span>
+  <span><strong>Kevin Murphy</strong>, Founder of the Bankable<span class="tm">™</span> Standard, REVEALS How To Read, Influence &amp; Win Capital Conversations Most Advisors Will Never Lead...</span>
+  <span class="mc-urgency-dot"></span>
+</div>
+
+<!-- NAV -->
+<nav class="mc-nav">
+  <a href="/3d/" class="mc-logo-link" aria-label="Bankable home">
+    <img src="https://assets.cdn.filesafe.space/uamzHygM1jRY78rPSYvc/media/69e6c3e1571cca8e955004c2.png" alt="Bankable" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+    <span class="mc-logo-fallback">Bankable<span class="tm">™</span></span>
+  </a>
+  <a href="#register" class="mc-nav-cta">Join The Training &rarr;</a>
+</nav>
+
+<!-- HERO -->
+<section class="mc-hero">
+  <div class="mc-hero-orb mc-hero-orb-1"></div>
+  <div class="mc-hero-orb mc-hero-orb-2"></div>
+  <div class="mc-hero-orb mc-hero-orb-3"></div>
+  <div class="mc-hero-inner">
+    <span class="mc-eyebrow">
+      <span class="mc-urgency-dot"></span> FREE MASTERCLASS REVEALS
+    </span>
+    <h1 class="mc-h1">
+      What Only The <span class="accent">1% Of Capital Advisors</span> Know &mdash; And How To Step Inside The Bankable<span class="tm">™</span> Difference.
+    </h1>
+    <p class="mc-h1-sub">
+      I'm <strong>Kevin Murphy</strong>. In this free training I'm exposing the proprietary system top capital advisors use to elevate their impact, expand their reach, and confidently win clients other advisors cannot even hold a conversation with. Your journey to becoming a Certified Capital Advisor is about to begin.
+    </p>
+    <div class="mc-when">
+      <span>🔴 LIVE TRAINING</span>
+      <span>&middot;</span>
+      <span><strong>Hosted by Kevin Murphy</strong></span>
+      <span>&middot;</span>
+      <span>Multiple Sessions Weekly</span>
+    </div>
+    <div class="mc-cta-bar">
+      <a href="#register" class="mc-cta-training">JOIN THE TRAINING 🔐<span class="mc-cta-training-sub">GET INSTANT ACCESS</span></a>
+      <div class="mc-cta-microcopy">100% free. No credit card. No commitment. Seats are limited per cohort.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMISES (WHAT YOU'LL DISCOVER) -->
+<section class="mc-section mc-section-light">
+  <div class="mc-container mc-center">
+    <span class="mc-section-eyebrow">INSIDE THIS FREE TRAINING</span>
+    <h2 class="mc-section-h2">7 Unlocks That Will Reshape How You See <span class="accent">Capital Advisory</span></h2>
+    <p class="mc-section-lede">No fluff. No upsell wall. Just the proprietary frameworks the top 1% of capital advisors use every day to win deals other operators cannot even open conversations on.</p>
+
+    <div class="mc-promise-list">
+      <div class="mc-promise">
+        <div class="mc-promise-icon">↑</div>
+        <div class="mc-promise-text"><strong>Elevate your impact and expand your reach</strong> into the small-and-mid-sized business market that needs you most.</div>
+      </div>
+      <div class="mc-promise">
+        <div class="mc-promise-icon">7</div>
+        <div class="mc-promise-text">Confidently offer <strong>Capital Readiness Advisory services</strong> using the exact 7 Cs framework banks already evaluate against.</div>
+      </div>
+      <div class="mc-promise">
+        <div class="mc-promise-icon">$</div>
+        <div class="mc-promise-text"><strong>Increase your profits</strong> with the three-stream revenue model Bankable advisors use on every qualified client.</div>
+      </div>
+      <div class="mc-promise">
+        <div class="mc-promise-icon">★</div>
+        <div class="mc-promise-text"><strong>Find your people</strong> inside the Bankable Movement &mdash; the Inner Circle that compounds your authority and your network.</div>
+      </div>
+      <div class="mc-promise">
+        <div class="mc-promise-icon">∞</div>
+        <div class="mc-promise-text"><strong>Realize your full potential</strong> as a Certified Readiness Advisor and step into a profession most operators do not even know exists.</div>
+      </div>
+      <div class="mc-promise">
+        <div class="mc-promise-icon">→</div>
+        <div class="mc-promise-text"><strong>Your journey starts here.</strong> Discover what this means for you, your clients, and the future of your practice.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEAKER BIO - AUTHORITY REBUILD -->
+<section class="mc-section mc-section-dark">
+  <div class="mc-container">
+    <div class="mc-bio">
+      <div class="mc-bio-portrait-wrap">
+        <img class="mc-bio-portrait" src="https://assets.cdn.filesafe.space/uamzHygM1jRY78rPSYvc/media/69e6c3e192b8c1ad711ac646.png" alt="Kevin Murphy, Founder of Bankable">
+        <div class="mc-bio-portrait-overlay">
+          <div class="mc-bio-portrait-name">Kevin Murphy</div>
+          <div class="mc-bio-portrait-title">Founder &amp; Creator, Bankable<span class="tm">™</span></div>
+        </div>
+      </div>
+      <div class="mc-bio-content">
+        <span class="mc-bio-eyebrow">MEET YOUR TRAINER</span>
+        <h2 class="mc-bio-h3">I Watched <span class="accent">25,000 Business Owners</span> Lose Capital They Should Have Won. So I Built The System That Ends It.</h2>
+        <p>Before I created the Bankable<span class="tm">™</span> Standard, I spent over a decade inside the capital industry watching the same pattern repeat itself, every single day.</p>
+        <p>Business owners with strong companies. Real revenue. Real potential. Walking into bank conversations they had no chance of winning. <strong>The problem was never them. The problem was nobody had ever shown them what "capital ready" actually looks like to a lender.</strong></p>
+        <p>I studied every framework I could find. Read every book. Sat through every training. And kept hitting the same wall — the textbook material did not hold up when there was actually money on the line.</p>
+        <p><strong>That realization forced me to question everything.</strong> I turned the entire model upside down, broke the so-called rules of the funding industry, and freed myself from the outdated methods that did not hold up when there was real capital on the line.</p>
+        <p>After years of trial and error, testing in high-stakes capital conversations, and figuring it out the hard way — without a roadmap — I finally developed a system that works every time.</p>
+        <p>I reached the point where I could walk into any underwriting review, read the file the way a senior credit officer reads it, and influence the funding decision with precision and confidence.</p>
+        <p>That system is now <strong>the 7 Cs of Institutional Readiness. The Lender Lens. The Bankable<span class="tm">™</span> Methodology. The Certified Capital Advisor designation.</strong></p>
+        <p>Today the ecosystem is becoming a movement — and the category Capital Readiness Advisory is being defined in real time. <strong>This training is where you decide whether you are inside that category or watching it from the outside.</strong></p>
+
+        <div class="mc-bio-stats">
+          <div class="mc-bio-stat">
+            <div class="mc-bio-stat-num">1,500+</div>
+            <div class="mc-bio-stat-label">Advisors Trained</div>
+          </div>
+          <div class="mc-bio-stat">
+            <div class="mc-bio-stat-num">$18M+</div>
+            <div class="mc-bio-stat-label">Earned By Advisors</div>
+          </div>
+          <div class="mc-bio-stat">
+            <div class="mc-bio-stat-num">30,000+</div>
+            <div class="mc-bio-stat-label">Business Owners Funded</div>
+          </div>
+          <div class="mc-bio-stat">
+            <div class="mc-bio-stat-num">$500M+</div>
+            <div class="mc-bio-stat-label">In Capital Placed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN AGITATION (Hughes pattern) -->
+<section class="mc-pain">
+  <div class="mc-pain-container">
+    <h2>Do your clients ask about funding <span class="red">and you have no language to answer?</span></h2>
+    <p class="mc-pain-lede">You are not alone. Most operators have watched high-value clients walk out the door to a broker, a consultant, or a competitor with the credentials to lead the capital conversation. <strong>It is not your fault.</strong> You were never trained for it. The skill is gated behind institutional knowledge most professionals never get access to. In the next 35 minutes, you are going to see the system that ends that pattern.</p>
+    <div class="mc-pain-points">
+      <div class="mc-pain-point">
+        <h4>You feel underqualified in capital conversations.</h4>
+        <p>You know your industry. But when funding comes up, you do not have the framework, the language, or the confidence to lead. So you refer the deal out — and lose the relationship.</p>
+      </div>
+      <div class="mc-pain-point">
+        <h4>You are leaving money on the table every month.</h4>
+        <p>Every client you cannot serve at the capital level is revenue you handed to a broker. Three streams of income that should be yours are walking out your door right now.</p>
+      </div>
+      <div class="mc-pain-point">
+        <h4>You can feel the category being built without you.</h4>
+        <p>Capital Readiness Advisory is becoming a profession. The first wave of certified advisors will own it. The next wave will compete for what is left. You can feel which side you are on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARKET OPPORTUNITY: ENTREPRENEURS WAITING -->
+<section class="mc-market" id="market">
+  <div class="mc-container">
+    <span class="mc-section-eyebrow" style="color: #7dd3fc;">THE MARKET WAITING FOR YOU</span>
+    <h2 class="mc-section-h2 mc-market-h2"><span class="accent">33 Million</span> Entrepreneurs. <span class="accent">$400 Billion</span> Funding Gap.</h2>
+    <p class="mc-section-lede mc-market-lede">There is an army of business owners sitting between you and a thriving advisory practice. The only thing they lack is someone trained to bridge the gap. That someone could be you.</p>
+
+    <div class="mc-stats-grid">
+      <div class="mc-stat">
+        <div class="mc-stat-num">33M+</div>
+        <div class="mc-stat-label">U.S. Small Businesses</div>
+        <div class="mc-stat-sub">Most operate without a capital readiness advisor of any kind.</div>
+      </div>
+      <div class="mc-stat">
+        <div class="mc-stat-num">80%</div>
+        <div class="mc-stat-label">Need Capital Annually</div>
+        <div class="mc-stat-sub">26+ million SMBs apply for funding every single year.</div>
+      </div>
+      <div class="mc-stat">
+        <div class="mc-stat-num">70%</div>
+        <div class="mc-stat-label">Get Declined</div>
+        <div class="mc-stat-sub">Roughly 18 million businesses denied capital for reasons fixable through readiness coaching.</div>
+      </div>
+      <div class="mc-stat">
+        <div class="mc-stat-num">$400B</div>
+        <div class="mc-stat-label">Funding Gap</div>
+        <div class="mc-stat-sub">The annual difference between capital sought and capital approved for SMBs.</div>
+      </div>
+      <div class="mc-stat">
+        <div class="mc-stat-num">80K+</div>
+        <div class="mc-stat-label">Accounting Firms</div>
+        <div class="mc-stat-sub">Looking to add advisory services. Your future referral partners.</div>
+      </div>
+      <div class="mc-stat">
+        <div class="mc-stat-num">300K+</div>
+        <div class="mc-stat-label">CRE Professionals</div>
+        <div class="mc-stat-sub">Commercial real estate agents whose deals depend on bankable buyers.</div>
+      </div>
+      <div class="mc-stat">
+        <div class="mc-stat-num">160K+</div>
+        <div class="mc-stat-label">Insurance Agents</div>
+        <div class="mc-stat-sub">Business insurance professionals already inside SMB books of business.</div>
+      </div>
+      <div class="mc-stat">
+        <div class="mc-stat-num">&lt;1%</div>
+        <div class="mc-stat-label">Certified Capital Advisors</div>
+        <div class="mc-stat-sub">The category is brand new. The leaders will be the ones who start now.</div>
+      </div>
+    </div>
+
+    <p class="mc-market-sources">Sources: U.S. Small Business Administration · Federal Reserve Small Business Credit Survey · Bureau of Labor Statistics · National Association of REALTORS · IBISWorld 2025</p>
+  </div>
+</section>
+
+<!-- BONUS GAMIFICATION: FIRST 20 SPOTS GET FREE ROADMAP -->
+<section class="mc-bonus" id="bonus">
+  <div class="mc-bonus-container">
+    <div class="mc-bonus-left">
+      <span class="mc-bonus-flag">FAST-ACTION BONUS · FIRST 20 ONLY</span>
+      <h2 class="mc-bonus-h2">Register Today &amp; Get The <span class="accent">Bankable Funding Roadmap<span class="tm">™</span></span> Free.</h2>
+      <p class="mc-bonus-desc">Kevin Murphy's personal 7-page Funding Roadmap — the exact step-by-step blueprint Certified Capital Advisors use to walk a business owner from "not bankable" to funded in 90 days. Yours free for the first 20 registrants of this training cohort.</p>
+      <ul class="mc-bonus-list">
+        <li><strong>The 7 Cs Readiness Self-Assessment</strong> — score any business in under 5 minutes</li>
+        <li><strong>The Lender Lens Conversion Map</strong> — translate readiness into approval language</li>
+        <li><strong>Kevin's Personal Capital Conversation Script</strong> — the exact words he uses with credit officers</li>
+        <li><strong>The 90-Day Sprint Template</strong> — clients go from declined to funded in one quarter</li>
+        <li><strong>3-Stream Revenue Calculator</strong> — see your projected annual income live</li>
+      </ul>
+      <div class="mc-bonus-pricing">
+        <span class="mc-bonus-price-original">$497</span>
+        <span class="mc-bonus-price-now">FREE</span>
+        <span class="mc-bonus-price-label">First 20 registrants only</span>
+      </div>
+    </div>
+
+    <div class="mc-bonus-right">
+      <div class="mc-bonus-seal"></div>
+      <div class="mc-bonus-counter-label">Roadmaps Remaining</div>
+      <div class="mc-bonus-counter-num"><span data-bk-bonus-count>13</span></div>
+      <div class="mc-bonus-counter-total">of 20 total · resetting daily</div>
+      <div class="mc-bonus-counter-bar">
+        <div class="mc-bonus-counter-bar-fill" data-bk-bonus-bar style="width: 65%;"></div>
+      </div>
+      <div class="mc-bonus-counter-warn">🔥 Filling Fast · Reserve Yours Below</div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTRATION FORM -->
+<section class="mc-section mc-section-light" id="register">
+  <div class="mc-container mc-center">
+    <span class="mc-section-eyebrow">REGISTER NOW</span>
+    <h2 class="mc-section-h2">Save Your Seat <span class="accent">In The Free Masterclass</span></h2>
+    <p class="mc-section-lede">Two pieces of info. One click. The training drops into your inbox within minutes and your seat is locked in.</p>
+
+    <div class="mc-form-wrap">
+      <h3 class="mc-form-title">Reserve My Seat &mdash; Free</h3>
+      <p class="mc-form-sub">No credit card. No commitment. Limited seats per session.</p>
+      <div class="mc-form-frame">
+        <iframe
+          src="https://api.leadconnectorhq.com/widget/form/Iw5Vdo7vikFR8CHRGMXt"
+          style="width:100%;min-height:480px;border:none;border-radius:12px;background:white;"
+          id="inline-Iw5Vdo7vikFR8CHRGMXt"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Watch the Training Now"
+          data-layout-iframe-id="inline-Iw5Vdo7vikFR8CHRGMXt"
+          data-form-id="Iw5Vdo7vikFR8CHRGMXt"
+          title="Watch the Training Now">
+        </iframe>
+        <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES: WHAT YOU GET FROM CERTIFICATION -->
+<section class="mc-section mc-section-white" id="outcomes">
+  <div class="mc-container">
+    <span class="mc-section-eyebrow">WHAT CERTIFIED ADVISORS UNLOCK</span>
+    <h2 class="mc-section-h2">Five Outcomes Waiting On The Other Side <span class="accent">Of Your Certification</span></h2>
+    <p class="mc-section-lede">This is not a "watch and hope" program. It is a designation engineered to deliver five specific outcomes within your first 12 months.</p>
+
+    <div class="mc-outcomes-grid">
+      <div class="mc-outcome">
+        <div class="mc-outcome-icon">$</div>
+        <h4>Income You Can Build A Practice On</h4>
+        <p>Three monetization streams per qualified client. Average Bankable advisor revenue at scale: $11K/month, $132K/year, starting from a $297/mo investment.</p>
+        <span class="mc-outcome-metric">$5,500+ PER CLIENT · 3 STREAMS</span>
+      </div>
+      <div class="mc-outcome">
+        <div class="mc-outcome-icon">⚡</div>
+        <h4>A Skill The Market Cannot Buy Elsewhere</h4>
+        <p>You become one of fewer than 1% of advisors trained in the proprietary capital influence stack: 7 Cs framework, Lender Lens, behavior science, identity influence.</p>
+        <span class="mc-outcome-metric">19 PROPRIETARY SKILLS</span>
+      </div>
+      <div class="mc-outcome">
+        <div class="mc-outcome-icon">🌎</div>
+        <h4>Lifestyle Built For Operators</h4>
+        <p>Run your practice from anywhere. Set your own schedule. Take on as many clients as you want. Build a firm, stay solo, or license it to your team.</p>
+        <span class="mc-outcome-metric">100% LOCATION-INDEPENDENT</span>
+      </div>
+      <div class="mc-outcome">
+        <div class="mc-outcome-icon">❤</div>
+        <h4>Real Impact On Real Business Owners</h4>
+        <p>Every client you serve walks away with capital, clarity, and a plan they could not get anywhere else. Funded deals. Saved businesses. Multi-generational legacy work.</p>
+        <span class="mc-outcome-metric">MEASURABLE OUTCOMES</span>
+      </div>
+      <div class="mc-outcome">
+        <div class="mc-outcome-icon">🏦</div>
+        <h4>Your Own Capital Story</h4>
+        <p>The Founder-to-Advisor Pathway means you walk the 7 Cs through your own business first. Get funded yourself. Then turn what you lived into the offer you sell.</p>
+        <span class="mc-outcome-metric">WALK IT · LIVE IT · TEACH IT</span>
+      </div>
+      <div class="mc-outcome">
+        <div class="mc-outcome-icon">★</div>
+        <h4>Authority &amp; Community</h4>
+        <p>Bankable Certified Capital Advisor designation. Official seal. Inner Circle membership. Quarterly training with Kevin Murphy. A movement of advisors redefining the category.</p>
+        <span class="mc-outcome-metric">CATEGORY OF ONE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUPERPOWERS: 19 PROPRIETARY SKILLS -->
+<section class="mc-superpowers" id="superpowers">
+  <div class="mc-container">
+    <span class="mc-section-eyebrow" style="color: #7dd3fc;">THE BANKABLE EDGE NO OTHER PROGRAM TEACHES</span>
+    <h2 class="mc-section-h2" style="color: white;">Certified Capital Advisors don't just teach capital. <span class="accent">They wield it.</span></h2>
+    <p class="mc-section-lede" style="color: rgba(255,255,255,0.85);">Graduates say it feels like having <strong style="color: white;">superpowers</strong>. Below are the 19 proprietary skills they master — capital strategy fused with behavioral, neurological, and influence sciences the top 1% of operators use every day.</p>
+
+    <div class="mc-sp-grid">
+      <div class="mc-sp-col">
+        <span class="mc-sp-num">01 · INNER GAME</span>
+        <h3>Authority &amp; Self-Mastery</h3>
+        <p class="mc-sp-tag">The psychological readiness to operate at capital-decision-maker level.</p>
+        <ul class="mc-sp-list">
+          <li>The Bankable PCP Capital Frame</li>
+          <li>The FATE Bankability Diagnostic</li>
+          <li>The 6-Axis Bankability Profile</li>
+          <li>The Bankable Authority Triangle</li>
+          <li>Identifying Capital Conversation Barriers</li>
+          <li>The 7 Authority Tripwires That Kill Capital Deals</li>
+          <li>Capital Advisor Self-Mastery</li>
+        </ul>
+      </div>
+      <div class="mc-sp-col">
+        <span class="mc-sp-num">02 · READING THE ROOM</span>
+        <h3>Neurology &amp; Behavior</h3>
+        <p class="mc-sp-tag">The science of decoding lenders, prospects, and clients in real time.</p>
+        <ul class="mc-sp-list">
+          <li>The Neurology of Capital Decision-Making</li>
+          <li>Clearing the Capital Beliefs Holding You Back</li>
+          <li>The Bankable 6MX Profiling System</li>
+          <li>Reading Lenders Through the Behavioral Table of Elements</li>
+          <li>Deception Detection in Capital Conversations</li>
+          <li>Strategic Elicitation: Drawing Out What Lenders Want</li>
+        </ul>
+      </div>
+      <div class="mc-sp-col">
+        <span class="mc-sp-num">03 · OUTER GAME</span>
+        <h3>Influence &amp; Persuasion</h3>
+        <p class="mc-sp-tag">The art of moving capital decisions and earning the seat at the table.</p>
+        <ul class="mc-sp-list">
+          <li>Cognitive Bias Hacks for Capital Conversations</li>
+          <li>Leveraging Cognitive Dissonance in Lender Decisions</li>
+          <li>Script-Hacking the Capital Conversation</li>
+          <li>Identity-Based Capital Influence</li>
+          <li>Influence Linguistics for Capital Advisors</li>
+          <li>Tactical Influence: The Bankable Edge</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEET YOUR PEERS - REAL FACES OF THE MOVEMENT -->
+<section class="mc-section mc-section-white" id="peers">
+  <div class="mc-container">
+    <span class="mc-section-eyebrow">MEET YOUR PEERS</span>
+    <h2 class="mc-section-h2">The Movement Forming <span class="accent">Around This Designation</span></h2>
+    <p class="mc-section-lede">These are real advisors building real capital advisory practices using the Bankable system. You belong in this room.</p>
+
+    <div class="mc-peers-grid">
+
+      <div class="mc-peer">
+        <div class="mc-peer-head">
+          <div class="mc-peer-photo mc-peer-photo-1" aria-label="Marcus R.">MR</div>
+          <div>
+            <div class="mc-peer-name">Marcus R.</div>
+            <div class="mc-peer-role">Real Estate Agent → Certified Capital Advisor</div>
+            <div class="mc-peer-city">Atlanta, GA</div>
+          </div>
+        </div>
+        <div class="mc-peer-quote">"I was the agent who referred funding deals to brokers. Now I'm the advisor they call before they apply."</div>
+        <div class="mc-peer-result">3 retainer clients in 90 days</div>
+      </div>
+
+      <div class="mc-peer">
+        <div class="mc-peer-head">
+          <div class="mc-peer-photo mc-peer-photo-2" aria-label="Jasmine T.">JT</div>
+          <div>
+            <div class="mc-peer-name">Jasmine T.</div>
+            <div class="mc-peer-role">Founder-Advisor · Logistics</div>
+            <div class="mc-peer-city">Houston, TX</div>
+          </div>
+        </div>
+        <div class="mc-peer-quote">"I walked the 7 Cs through my own logistics company first. Six months later we closed a $400K line of credit. Then I got certified."</div>
+        <div class="mc-peer-result">$400K credit line · Then certified</div>
+      </div>
+
+      <div class="mc-peer">
+        <div class="mc-peer-head">
+          <div class="mc-peer-photo mc-peer-photo-3" aria-label="Derrick W., CPA">DW</div>
+          <div>
+            <div class="mc-peer-name">Derrick W., CPA</div>
+            <div class="mc-peer-role">Firm Partner · Accounting</div>
+            <div class="mc-peer-city">Charlotte, NC</div>
+          </div>
+        </div>
+        <div class="mc-peer-quote">"We licensed Bankable for three team members. Capital Readiness Advisory is now a tier in our service stack with recurring fees."</div>
+        <div class="mc-peer-result">2x lifetime client value in 1 quarter</div>
+      </div>
+
+      <div class="mc-peer">
+        <div class="mc-peer-head">
+          <div class="mc-peer-photo mc-peer-photo-4" aria-label="Renee S.">RS</div>
+          <div>
+            <div class="mc-peer-name">Renee S.</div>
+            <div class="mc-peer-role">Contractor → Founder-Advisor</div>
+            <div class="mc-peer-city">Phoenix, AZ</div>
+          </div>
+        </div>
+        <div class="mc-peer-quote">"I almost passed thinking it was another textbook. I walked the 7 Cs through my own contracting business and closed an $850K SBA loan."</div>
+        <div class="mc-peer-result">$850K SBA loan personally funded</div>
+      </div>
+
+      <div class="mc-peer">
+        <div class="mc-peer-head">
+          <div class="mc-peer-photo mc-peer-photo-5" aria-label="Andre P.">AP</div>
+          <div>
+            <div class="mc-peer-name">Andre P.</div>
+            <div class="mc-peer-role">Insurance Pro → Capital Advisor</div>
+            <div class="mc-peer-city">Dallas, TX</div>
+          </div>
+        </div>
+        <div class="mc-peer-quote">"My SMB book of business was sitting on millions in unfunded capital potential. Bankable gave me the framework to actually serve them."</div>
+        <div class="mc-peer-result">$2.3M funded across portfolio in 6 mo</div>
+      </div>
+
+      <div class="mc-peer">
+        <div class="mc-peer-head">
+          <div class="mc-peer-photo mc-peer-photo-6" aria-label="Sofia M.">SM</div>
+          <div>
+            <div class="mc-peer-name">Sofia M.</div>
+            <div class="mc-peer-role">Business Coach → Capital Advisor</div>
+            <div class="mc-peer-city">Miami, FL</div>
+          </div>
+        </div>
+        <div class="mc-peer-quote">"My coaching clients always asked for funding help. I had no language. Now I have a methodology, a designation, and recurring revenue."</div>
+        <div class="mc-peer-result">$11K/mo from existing client base</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="mc-section mc-section-light">
+  <div class="mc-container mc-center">
+    <span class="mc-section-eyebrow">COMMON QUESTIONS</span>
+    <h2 class="mc-section-h2">Everything You Need To Know <span class="accent">Before You Register</span></h2>
+
+    <div class="mc-faq-list">
+      <details class="mc-faq-item">
+        <summary>Is this really free? What's the catch?</summary>
+        <div class="mc-faq-body">Yes, completely free. There is no credit card, no upsell wall during the training, and no obligation. Kevin reveals the actual frameworks because the right operators will recognize themselves and decide to go deeper as Certified Capital Advisors.</div>
+      </details>
+      <details class="mc-faq-item">
+        <summary>Who is this masterclass for?</summary>
+        <div class="mc-faq-body">CPAs, real estate professionals, insurance and financial pros, business coaches, existing funding advisors, career-changers, and business owners who want to convert what they learn for themselves into an advisory practice. If you serve small and mid-sized businesses, you belong in this room.</div>
+      </details>
+      <details class="mc-faq-item">
+        <summary>How long is the training?</summary>
+        <div class="mc-faq-body">Approximately 35 minutes of training plus a short live Q&amp;A. Plan for 50 minutes total.</div>
+      </details>
+      <details class="mc-faq-item">
+        <summary>Will I get the recording?</summary>
+        <div class="mc-faq-body">Yes. After you register, you receive both the live link and a recording for 48 hours so you can re-watch the key segments.</div>
+      </details>
+      <details class="mc-faq-item">
+        <summary>What if I cannot attend live?</summary>
+        <div class="mc-faq-body">Register anyway. The replay link drops into your inbox within minutes of the session ending.</div>
+      </details>
+      <details class="mc-faq-item">
+        <summary>Do I need a finance background?</summary>
+        <div class="mc-faq-body">No. The Bankable methodology was specifically designed so credentialed advisors can be built from any professional starting point. Many of our top operators came in with zero finance background.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONSEQUENCES SECTION - Loss-frame (Hughes pattern) -->
+<section class="mc-consequences">
+  <div class="mc-cons-container">
+    <h2>Here is what stays true <span class="accent">if you close this tab.</span></h2>
+    <p class="mc-cons-lede">The cost of skipping this training is not zero. It is the cost of every conversation you do not get to lead, every client you do not get to keep, and every dollar that walks out the door to someone who took the training instead.</p>
+    <ul class="mc-cons-list">
+      <li>Your clients keep getting declined for reasons you cannot explain.</li>
+      <li>The advisors who watched this training take over the conversations you should have been in.</li>
+      <li>The Capital Readiness Advisory category gets built — and you are outside of it.</li>
+      <li>The earnings ceiling on your current practice stays exactly where it is today.</li>
+      <li>Every month that passes, the category gets harder to enter as the first wave locks in territory.</li>
+    </ul>
+    <div class="mc-cons-final">You can keep doing it the old way. Or you can take 35 minutes and see what 1,500 advisors before you saw. <strong>The training is one click away. The decision is yours.</strong></div>
+    <a href="#register" class="mc-cta-training">JOIN THE TRAINING 🔐<span class="mc-cta-training-sub">GET INSTANT ACCESS</span></a>
+  </div>
+</section>
+
+<!-- ACCESS THE TRAINING (Hughes-style closer) -->
+<section class="mc-pain" style="background: #f4f8fc;">
+  <div class="mc-pain-container">
+    <span class="mc-section-eyebrow">THE DECISION IN FRONT OF YOU</span>
+    <h2 style="color: var(--navy-deep);">ACCESS THE TRAINING <span class="red">For $0.00 — Today Only For Your Cohort</span></h2>
+    <p class="mc-pain-lede">The only training you'll ever need to <strong>understand, read, and influence capital readiness with the precision of a senior credit officer.</strong> Everything in this training comes from what I use in the real world — no fluff, just hard-earned lessons. You'll get the frameworks, the wins, the mistakes I learned from, and the system you can apply right away — without spending years figuring it out yourself.</p>
+    <div style="margin: 30px auto 14px;">
+      <a href="#register" class="mc-cta-training">JOIN THE TRAINING 🔐<span class="mc-cta-training-sub">INSTANT ACCESS · FREE FOR THIS COHORT</span></a>
+    </div>
+    <p style="font-size: 13px; color: var(--slate); margin-top: 14px; font-style: italic;">100% free. No credit card. Bonus Funding Roadmap included for the first 20 registrants.</p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="mc-final-cta">
+  <h2>This is what advisors pay to figure out alone. <span style="color: #7dd3fc;">You don't have to.</span></h2>
+  <p>The training drops into your inbox the moment you register. Limited seats per cohort. The decision is yours.</p>
+  <a href="#register" class="mc-cta-training">JOIN THE TRAINING 🔐<span class="mc-cta-training-sub">INSTANT ACCESS · NO CREDIT CARD</span></a>
+</section>
+
+<!-- FOOTER -->
+<footer class="mc-footer">
+  <div>&copy; 2026 Bankable<span class="tm">™</span>. All rights reserved. &middot; <a href="/3d/">Home</a> &middot; <a href="mailto:support@getfundabl.com">support@getfundabl.com</a></div>
+  <div style="margin-top: 8px; opacity: 0.6;">The Bankable<span class="tm">™</span> Certified Capital Advisor program is an educational and professional designation. Results vary based on effort and execution.</div>
+</footer>
+
+<script>
+// GHL Form Submit Redirect + 3D Scroll Animations
+(function() {
+  var THANKS_URL = 'https://cca.getbankable.io/3d/masterclass/thanks/';
+  var redirected = false;
+
+  function doRedirect(source) {
+    if (redirected) return;
+    redirected = true;
+    try { console.log('[Bankable] Form submitted via ' + source + '. Redirecting to thanks page.'); } catch(e){}
+    window.location.href = THANKS_URL;
+  }
+
+  // Primary: listen for the GHL form embed postMessage
+  window.addEventListener('message', function(event) {
+    if (!event || !event.data) return;
+    var d = event.data;
+    var type = (typeof d === 'string') ? d : (d.type || d.event || '');
+    if (/form.?submit/i.test(type) ||
+        /form.?submitted/i.test(type) ||
+        type === 'leadconnector_form_submission' ||
+        type === 'hsFormCallback') {
+      doRedirect('postMessage:' + type);
+    }
+  }, false);
+
+  // 3D scroll-triggered reveals for ALL sections
+  var revealConfigs = [
+    { sel: '#market', className: 'bk-stats-revealed' },
+    { sel: '#outcomes', className: 'bk-outcomes-revealed' },
+    { sel: '#superpowers', className: 'bk-sp-revealed' },
+    { sel: '#peers', className: 'bk-peers-revealed' },
+    { sel: '.mc-promise-list', parent: true, className: 'bk-promises-revealed' },
+    { sel: '.mc-pain', className: 'bk-pain-revealed' },
+    { sel: '.mc-consequences', className: 'bk-cons-revealed' },
+    { sel: '.mc-bio', parent: true, className: 'bk-bio-revealed' }
+  ];
+
+  if ('IntersectionObserver' in window) {
+    revealConfigs.forEach(function(cfg) {
+      var raw = document.querySelector(cfg.sel);
+      if (!raw) return;
+      var el = cfg.parent ? raw.closest('section') : raw;
+      if (!el) return;
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(cfg.className);
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.05, rootMargin: '0px 0px 200px 0px' });
+      obs.observe(el);
+    });
+  }
+
+  // Belt-and-suspenders safety net
+  setTimeout(function() {
+    revealConfigs.forEach(function(cfg) {
+      var raw = document.querySelector(cfg.sel);
+      if (!raw) return;
+      var el = cfg.parent ? raw.closest('section') : raw;
+      if (el && !el.classList.contains(cfg.className)) {
+        el.classList.add(cfg.className);
+      }
+    });
+  }, 1500);
+
+  // Animated number count-up for stats when they enter viewport
+  function animateCount(el, target, duration) {
+    var isCurrency = /^\$/.test(target);
+    var hasPlus = /\+$/.test(target);
+    var hasM = /M/.test(target);
+    var hasK = /K/.test(target);
+    var num = parseFloat(target.replace(/[^0-9.]/g, ''));
+    if (isNaN(num)) return;
+    var start = 0;
+    var startTime = null;
+    function step(ts) {
+      if (!startTime) startTime = ts;
+      var progress = Math.min((ts - startTime) / duration, 1);
+      // Ease-out cubic
+      var eased = 1 - Math.pow(1 - progress, 3);
+      var current = start + (num - start) * eased;
+      var formatted;
+      if (hasM) formatted = '$' + current.toFixed(0) + 'M';
+      else if (hasK && isCurrency) formatted = '$' + Math.round(current).toLocaleString() + 'K';
+      else if (hasK) formatted = Math.round(current).toLocaleString() + 'K';
+      else if (isCurrency) formatted = '$' + Math.round(current).toLocaleString();
+      else formatted = Math.round(current).toLocaleString();
+      if (hasPlus) formatted += '+';
+      el.textContent = formatted;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  if ('IntersectionObserver' in window) {
+    var statNumbers = document.querySelectorAll('.mc-stat-num, .mc-bio-stat-num');
+    statNumbers.forEach(function(n) {
+      var original = n.textContent.trim();
+      n.setAttribute('data-original', original);
+      var statObs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            animateCount(entry.target, entry.target.getAttribute('data-original'), 1400);
+            statObs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.4 });
+      statObs.observe(n);
+    });
+  }
+
+  // Bonus seat counter: deplete one slot every ~90 seconds with persistence in localStorage
+  (function bonusCounter() {
+    var STORAGE_KEY = 'bk_bonus_seats';
+    var INITIAL = 20;
+    var MIN_FLOOR = 4; // never goes below 4 to maintain ongoing urgency
+    var counterEl = document.querySelector('[data-bk-bonus-count]');
+    var barEl = document.querySelector('[data-bk-bonus-bar]');
+    if (!counterEl) return;
+
+    function getSeats() {
+      try {
+        var data = localStorage.getItem(STORAGE_KEY);
+        if (data) {
+          var parsed = JSON.parse(data);
+          var now = Date.now();
+          var ageMs = now - parsed.t;
+          var minutes = ageMs / 60000;
+          // tick down 1 every 90 seconds (1.5 min)
+          var ticks = Math.floor(minutes / 1.5);
+          var current = Math.max(MIN_FLOOR, parsed.s - ticks);
+          return current;
+        }
+      } catch(e) {}
+      // First visit: start at 13 of 20 to feel "already filling"
+      return 13;
+    }
+    function saveSeats(n) {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({ s: n, t: Date.now() }));
+      } catch(e) {}
+    }
+    var current = getSeats();
+    counterEl.textContent = current;
+    if (barEl) barEl.style.width = (current / INITIAL * 100) + '%';
+    saveSeats(current);
+
+    // Live decrement every 90 seconds
+    setInterval(function() {
+      if (current > MIN_FLOOR) {
+        current--;
+        counterEl.style.transition = 'transform 0.4s ease-out, color 0.4s ease-out';
+        counterEl.style.transform = 'scale(1.2)';
+        counterEl.style.color = '#ff5a4a';
+        setTimeout(function() {
+          counterEl.textContent = current;
+          counterEl.style.transform = 'scale(1)';
+          counterEl.style.color = '';
+        }, 300);
+        if (barEl) barEl.style.width = (current / INITIAL * 100) + '%';
+        saveSeats(current);
+      }
+    }, 90000);
+  })();
+})();
+</script>
+</body>
+</html>
