@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0a1845">
+<meta name="description" content="You're in. Watch The Bankable Masterclass right now with Kevin Murphy.">
+<meta name="robots" content="noindex,follow">
+<title>You're In · The Bankable Masterclass · Watch Now</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy-deep: #0a1845;
+  --navy: #2d388a;
+  --blue: #137dc5;
+  --cyan: #00aeef;
+  --cyan-soft: #7dd3fc;
+  --ink: #0f1729;
+  --slate: #4a5670;
+  --line: #e3e8f1;
+  --gradient: linear-gradient(135deg, #2d388a 0%, #137dc5 55%, #00aeef 100%);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  color: var(--ink); background: #f4f8fc;
+  line-height: 1.55; -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: 'Sora', sans-serif; font-weight: 800; line-height: 1.15; }
+.tm { font-size: 0.6em; vertical-align: super; opacity: 0.7; }
+a { color: var(--blue); text-decoration: none; }
+
+/* Confirmation hero */
+.tx-hero {
+  background: linear-gradient(180deg, #0a1845 0%, #142560 100%);
+  background-image:
+    radial-gradient(ellipse at center top, rgba(0,174,239,0.2), transparent 55%),
+    linear-gradient(180deg, #0a1845 0%, #142560 100%);
+  color: white; padding: 90px 24px 70px;
+  text-align: center; position: relative;
+}
+.tx-checkmark {
+  width: 90px; height: 90px; margin: 0 auto 24px;
+  background: linear-gradient(135deg, #00aeef 0%, #137dc5 100%);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 44px; color: white;
+  box-shadow: 0 24px 60px rgba(0,174,239,0.5);
+  animation: txCheck 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  transform: scale(0);
+}
+@keyframes txCheck { to { transform: scale(1); } }
+.tx-eyebrow {
+  display: inline-block; font-family: 'Sora', sans-serif;
+  font-size: 13px; font-weight: 800; color: #7dd3fc;
+  text-transform: uppercase; letter-spacing: 0.18em;
+  margin-bottom: 14px;
+}
+.tx-h1 {
+  font-size: clamp(34px, 5vw, 54px); margin: 0 0 16px;
+  line-height: 1.1; color: white; text-wrap: balance;
+}
+.tx-h1 .accent {
+  background: linear-gradient(90deg, #00aeef, #7dd3fc);
+  background-clip: text; -webkit-background-clip: text; color: transparent;
+}
+.tx-sub {
+  font-size: 18px; color: rgba(255,255,255,0.88);
+  max-width: 720px; margin: 0 auto 12px; line-height: 1.55;
+}
+
+/* Section base */
+.tx-section { padding: 80px 24px; }
+.tx-section-light { background: #f4f8fc; }
+.tx-section-white { background: white; }
+.tx-container { max-width: 1080px; margin: 0 auto; }
+.tx-center { text-align: center; }
+.tx-eyebrow-light {
+  display: inline-block; font-family: 'Sora', sans-serif;
+  font-size: 12px; font-weight: 800; color: #0a4a78;
+  text-transform: uppercase; letter-spacing: 0.18em; margin-bottom: 14px;
+}
+.tx-h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  color: var(--navy-deep); margin: 0 0 18px;
+  line-height: 1.18; text-wrap: balance;
+}
+.tx-h2 .accent {
+  background: var(--gradient); background-clip: text; -webkit-background-clip: text; color: transparent;
+}
+.tx-lede {
+  font-size: 17px; color: var(--slate); line-height: 1.6;
+  max-width: 760px; margin: 0 auto 36px;
+}
+
+/* Video player */
+.tx-video-frame {
+  max-width: 920px; margin: 0 auto;
+  position: relative; aspect-ratio: 16 / 9;
+  background: #0a1845; border-radius: 18px; overflow: hidden;
+  box-shadow: 0 40px 100px -30px rgba(0,174,239,0.4), 0 0 0 1px rgba(125,211,252,0.25);
+}
+.tx-video-frame video,
+.tx-video-frame iframe {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  border: 0; border-radius: 18px; object-fit: cover; background: #0a1845;
+}
+.tx-video-meta {
+  display: flex; justify-content: space-between; align-items: center;
+  max-width: 920px; margin: 14px auto 0;
+  font-family: 'Sora', sans-serif; font-size: 14px;
+  color: var(--slate);
+}
+.tx-video-meta strong { color: var(--navy-deep); }
+
+/* Next step CTA */
+.tx-next-step {
+  background: linear-gradient(135deg, #00aeef 0%, #137dc5 100%);
+  border-radius: 24px; padding: 40px 36px;
+  max-width: 880px; margin: 0 auto;
+  color: white; text-align: center;
+  box-shadow: 0 40px 90px -30px rgba(0,174,239,0.4);
+}
+.tx-next-step h3 {
+  font-size: clamp(24px, 3vw, 32px); color: white;
+  margin: 0 0 14px; line-height: 1.2;
+}
+.tx-next-step p {
+  font-size: 16px; color: rgba(255,255,255,0.92);
+  max-width: 600px; margin: 0 auto 24px; line-height: 1.55;
+}
+.tx-cta-primary {
+  background: white; color: #137dc5;
+  font-family: 'Sora', sans-serif; font-weight: 800;
+  font-size: 18px; padding: 18px 32px; border-radius: 14px;
+  text-decoration: none; display: inline-block;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+.tx-cta-primary:hover { transform: translateY(-3px); color: #137dc5; }
+
+/* Calendar / add to */
+.tx-calendar {
+  display: flex; justify-content: center; gap: 14px;
+  flex-wrap: wrap; margin-top: 28px;
+}
+.tx-cal-btn {
+  background: white; color: var(--navy-deep);
+  border: 1.5px solid var(--line); padding: 12px 20px;
+  border-radius: 10px; font-family: 'Sora', sans-serif;
+  font-size: 14px; font-weight: 700;
+  display: inline-flex; align-items: center; gap: 8px;
+  text-decoration: none; transition: all 0.2s ease;
+}
+.tx-cal-btn:hover { border-color: var(--cyan); transform: translateY(-2px); color: var(--blue); }
+
+/* Bonus stack */
+.tx-bonus-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+  margin-top: 30px;
+}
+.tx-bonus {
+  background: white; padding: 28px 26px;
+  border-radius: 16px; border: 1px solid var(--line);
+  box-shadow: 0 14px 36px -22px rgba(19,125,197,0.15);
+  text-align: left;
+}
+.tx-bonus-icon {
+  width: 44px; height: 44px; border-radius: 10px;
+  background: var(--gradient); color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; font-weight: 800; margin-bottom: 16px;
+}
+.tx-bonus h4 {
+  font-size: 17px; color: var(--navy-deep); margin: 0 0 8px;
+}
+.tx-bonus p {
+  font-size: 14px; color: var(--slate); line-height: 1.5;
+}
+
+/* FAQ */
+.tx-faq-list { max-width: 760px; margin: 30px auto 0; }
+.tx-faq-item {
+  background: white; border-radius: 14px;
+  border: 1px solid var(--line); margin-bottom: 12px;
+  overflow: hidden;
+}
+.tx-faq-item summary {
+  cursor: pointer; padding: 22px 26px;
+  font-family: 'Sora', sans-serif; font-size: 16px; font-weight: 700;
+  color: var(--navy-deep); list-style: none;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.tx-faq-item summary::-webkit-details-marker { display: none; }
+.tx-faq-item summary::after {
+  content: '+'; font-size: 24px; color: var(--cyan); font-weight: 800;
+  transition: transform 0.2s ease;
+}
+.tx-faq-item[open] summary::after { transform: rotate(45deg); }
+.tx-faq-body { padding: 0 26px 22px; color: var(--slate); font-size: 15px; line-height: 1.6; }
+
+/* Footer */
+.tx-footer {
+  background: #0a1845; color: rgba(255,255,255,0.7);
+  padding: 36px 28px; text-align: center; font-size: 13px;
+}
+.tx-footer a { color: #7dd3fc; }
+
+/* Responsive */
+@media (max-width: 800px) {
+  .tx-bonus-grid { grid-template-columns: 1fr; }
+  .tx-section { padding: 60px 18px; }
+  .tx-hero { padding: 60px 18px 50px; }
+  .tx-next-step { padding: 30px 22px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO: YOU'RE IN -->
+<section class="tx-hero">
+  <div class="tx-checkmark">✓</div>
+  <span class="tx-eyebrow">YOU'RE IN</span>
+  <h1 class="tx-h1">Your masterclass seat is <span class="accent">locked in.</span></h1>
+  <p class="tx-sub">The full training is below. Watch it right now &mdash; or grab the calendar link to come back when you can give it 35 minutes of undivided attention.</p>
+</section>
+
+<!-- THE MASTERCLASS VIDEO -->
+<section class="tx-section tx-section-white">
+  <div class="tx-container tx-center">
+    <span class="tx-eyebrow-light">WATCH THE FULL MASTERCLASS</span>
+    <h2 class="tx-h2">The Bankable Certified Capital Advisor Difference <span class="accent">with Kevin Murphy</span></h2>
+
+    <div class="tx-video-frame">
+      <video controls preload="metadata" playsinline poster="https://assets.cdn.filesafe.space/uamzHygM1jRY78rPSYvc/media/6a160e036c22e95c9eca2c00.jpeg">
+        <source src="https://assets.cdn.filesafe.space/uamzHygM1jRY78rPSYvc/media/6a16187efe894fbda0d97b6e.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+    <div class="tx-video-meta">
+      <span><strong>Hosted by Kevin Murphy</strong> · Founder, Bankable<span class="tm">™</span></span>
+      <span>35:00</span>
+    </div>
+
+    <div class="tx-calendar">
+      <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=The+Bankable+Masterclass&details=Watch+the+full+masterclass+with+Kevin+Murphy&location=https://cca.getbankable.io/3d/masterclass/thanks/" target="_blank" rel="noopener" class="tx-cal-btn">📅 Add to Google Calendar</a>
+      <a href="data:text/calendar;charset=utf-8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ASUMMARY:The Bankable Masterclass%0ADESCRIPTION:Watch the full masterclass with Kevin Murphy%0ALOCATION:https://cca.getbankable.io/3d/masterclass/thanks/%0AEND:VEVENT%0AEND:VCALENDAR" download="bankable-masterclass.ics" class="tx-cal-btn">📅 Add to Apple/Outlook</a>
+    </div>
+  </div>
+</section>
+
+<!-- NEXT STEP: APPLY -->
+<section class="tx-section tx-section-light">
+  <div class="tx-container">
+    <div class="tx-next-step">
+      <h3>Ready to become a Certified Capital Advisor?</h3>
+      <p>If you finish the masterclass and recognize yourself in this work, the next step is the founding cohort application. Founding members lock in $297/mo pricing for life and gain immediate access to the entire stack.</p>
+      <a href="/3d/#apply" class="tx-cta-primary">Apply For Founding Cohort &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- BONUS STACK -->
+<section class="tx-section tx-section-white">
+  <div class="tx-container tx-center">
+    <span class="tx-eyebrow-light">BONUS RESOURCES FOR REGISTRANTS</span>
+    <h2 class="tx-h2">Three Free Bonuses <span class="accent">Sent To Your Inbox</span></h2>
+    <p class="tx-lede">While you watch the masterclass, check your email. We just sent three resources Bankable advisors use every week.</p>
+
+    <div class="tx-bonus-grid">
+      <div class="tx-bonus">
+        <div class="tx-bonus-icon">📊</div>
+        <h4>The 7 Cs Cheat Sheet</h4>
+        <p>One-page summary of the institutional readiness framework banks already evaluate against. Print it. Tape it next to your monitor.</p>
+      </div>
+      <div class="tx-bonus">
+        <div class="tx-bonus-icon">🔍</div>
+        <h4>The Lender Lens Worksheet</h4>
+        <p>The exact scoring grid Bankable advisors use to translate the 7 Cs into the 6 Cs lenders score on. Use it on your next client conversation.</p>
+      </div>
+      <div class="tx-bonus">
+        <div class="tx-bonus-icon">💰</div>
+        <h4>The 3-Stream Revenue Calculator</h4>
+        <p>Plug in your monthly scan target. See your projected income from non-bankable funding + coaching + bankable funding commissions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="tx-section tx-section-light">
+  <div class="tx-container tx-center">
+    <span class="tx-eyebrow-light">FREQUENTLY ASKED</span>
+    <h2 class="tx-h2">After You Watch The Masterclass</h2>
+
+    <div class="tx-faq-list">
+      <details class="tx-faq-item">
+        <summary>What happens after I watch the masterclass?</summary>
+        <div class="tx-faq-body">If the work resonates, the next step is the Founding Cohort application — a 2-minute form. Approved applicants get same-day access to the entire Bankable Certified Capital Advisor program.</div>
+      </details>
+      <details class="tx-faq-item">
+        <summary>Can I rewatch the masterclass later?</summary>
+        <div class="tx-faq-body">Yes — this page is yours. Bookmark it. Replay any section anytime for the next 48 hours.</div>
+      </details>
+      <details class="tx-faq-item">
+        <summary>Is there a live Q&amp;A I can join?</summary>
+        <div class="tx-faq-body">Yes. Every Founding Cohort applicant gets a personal call with a Bankable Guide within 24 hours of applying. That is your live Q&amp;A.</div>
+      </details>
+      <details class="tx-faq-item">
+        <summary>How fast can I start earning?</summary>
+        <div class="tx-faq-body">Capital Connectors earn referral income from Day 1. Certified Capital Advisors typically close their first $5,500+ client within 30-90 days of certification. See the math in the ROI section on the main site.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="tx-footer">
+  <div>&copy; 2026 Bankable<span class="tm">™</span>. All rights reserved. &middot; <a href="/3d/">Home</a> &middot; <a href="/3d/masterclass/">Masterclass</a> &middot; <a href="mailto:support@getfundabl.com">support@getfundabl.com</a></div>
+  <div style="margin-top: 8px; opacity: 0.6;">The Bankable<span class="tm">™</span> Certified Capital Advisor program is an educational and professional designation. Results vary based on effort and execution.</div>
+</footer>
+
+</body>
+</html>
