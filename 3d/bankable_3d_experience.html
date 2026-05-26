@@ -1025,9 +1025,13 @@ footer .fbot .legal { color: rgba(255,255,255,0.4); }
   font-size: 14px; color: var(--muted); margin-top: 8px; font-weight: 500;
 }
 .testimonials {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
   margin-bottom: 50px;
   text-align: left;
+  max-width: 1100px; margin-left: auto; margin-right: auto;
+}
+@media (max-width: 900px) {
+  .testimonials { grid-template-columns: 1fr; gap: 18px; }
 }
 .testimonial {
   background: var(--bg-section); padding: 32px;
@@ -6081,6 +6085,18 @@ footer .fbot .legal { color: rgba(255,255,255,0.4); }
           <div>
             <div class="t-name">Derrick W., CPA</div>
             <div class="t-role">Firm Partner &middot; Charlotte, NC</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial" data-bk-spine-test="1" style="border-color: rgba(0,174,239,0.5); position: relative;">
+        <div style="position:absolute;top:-12px;right:24px;background:linear-gradient(135deg,#00aeef,#137dc5);color:#ffffff;font-family:Sora,sans-serif;font-size:10px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;padding:5px 12px;border-radius:999px;box-shadow:0 6px 16px rgba(0,174,239,0.4);z-index:3;">Walk · Live · Teach</div>
+        <div class="t-quote">"</div>
+        <div class="t-text">I almost passed on this because I thought "another certification, another textbook." Wrong. I walked the 7 Cs through my own contracting business first &mdash; closed an <strong>$850K SBA loan</strong> I had been trying to get for two years. I got funded, then I got certified. Now when I sit across from a business owner I do not pitch a service &mdash; I share a story they cannot argue with. <strong>Walk it. Live it. Teach it.</strong> That is not a marketing line. That is the only sequence that actually works.</div>
+        <div class="t-author">
+          <div class="t-avatar">RS</div>
+          <div>
+            <div class="t-name">Renee S.</div>
+            <div class="t-role">Founder &mdash; Advisor &middot; Phoenix, AZ</div>
           </div>
         </div>
       </div>
